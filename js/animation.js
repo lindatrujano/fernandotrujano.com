@@ -22,26 +22,20 @@ var tl = new TimelineMax({
     //Bring project page up
     tl.to("#unpin", .5, {transform: "translateY(6%)"});
 
-    // tl.to(".profile-pic", .35 ,{top: "1%", width: "60px", height: "60px", right: '55%'}, "-=.35");
-
     tl.to(".profile-pic", .35 ,{top: "10px", width: "60px", height: "60px", right: '55%'}, "-=.35");
 
-    // tl.fromTo("#name", .35 ,{fontSize: "5em"},{top: "1.5%", fontSize: "3.5em", right: '21%'}, "-=.35");
     tl.fromTo("#name", .35 ,{fontSize: "5em"},{top: "10px", fontSize: "3.5em", right: '21%'}, "-=.35");
-
 
     tl.to("#links", .05 ,{left: '50%'}, "-=.35");
 
     tl.to("#links", .001 ,{fontSize: "10px"}, "-=.3");
 
-    // tl.to("#links", .35 ,{bottom: "94%"}, "-=.35");
     tl.to("#links", .35 ,{top: "30px"}, "-=.35");
 
 
     TweenMax.to(window, 2, {scrollTo: {y: "1"}}); //Start at top
 
     if (window.mobilecheck()) tl.pause();
-// panel section pin
 
 
  if (!window.mobilecheck()){
@@ -78,25 +72,37 @@ var tl = new TimelineMax({
     });
  }
 
-
-//Mobile support
+//Mobile support - don't use ScrollMagic
 else {
     tl.timeScale(.75);
-    $(window).bind('mousewheel', function(event) {
-        if (event.originalEvent.wheelDelta >= 0) {
-            console.log('Scroll up');
-            if ($("#unpin").scrollTop() === 0){
-                $('#unpin').css('overflow', "hidden");
-                tl.reverse();
-            }
+
+    // Processes a scroll Up event and reverses the animation if necessary
+    function processScrollUp() {
+        if ($("#unpin").scrollTop() === 0){
+            $('#unpin').css('overflow', "hidden");
+            tl.reverse();
         }
-        else {
-            console.log('Scroll down');
-            if ($("body").scrollTop() < 5) {
-                tl.play();
-            }
+    }
+
+    // Processes a scroll Down event and starts the animation if necessary
+    function processScrollDown(){
+        if ($("body").scrollTop() < 5) {
+            tl.play();
         }
+    }
+
+    //Handle Mouse Scroll
+    $(window).bind('mousewheel', function(event) { //This is probably not needed for mobile, but I'll leave it in for now
+        event.originalEvent.wheelDelta >= 0 ? processScrollUp() : processScrollDown();
     });
+
+    // Handle mobile touch event
+    var lastY = 0 ;
+    document.addEventListener("touchmove", function(e) {
+        currentY =  e.changedTouches[0].clientY;
+        lastY < currentY ? processScrollUp(): processScrollDown();
+        lastY = currentY;
+     }, false);
 
     $("#projects").click(function(e){
         tl.play();
