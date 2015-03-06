@@ -3,7 +3,8 @@
 body {
   background: #3883D8;
   font-family: "Source Sans Pro", Arial, sans-serif;
-  font-size: 13px;
+  /*font-size: 13px;*/
+  font-size: 1em;
   tap-highlight-color: transparent;
 }
 
@@ -11,6 +12,7 @@ body,
 html {
   height: 100%;
   margin: 0;
+  /*min-height: 500px;*/
 }
 
 .container {
@@ -23,7 +25,7 @@ html {
 
 #content-wrapper {
   height: 100%;
-  min-height: 500px;
+  /*min-height: 500px;*/
   width: 100%;
 }
 
@@ -40,135 +42,272 @@ html {
   top: 0;
   width: 100%;
   background: #dcdcdc;
-  transform: translateY(90%);
-  -webkit-transform: translateY(90%);
+/*  transform: translateY(90%);
+  -webkit-transform: translateY(90%);*/
+  transform: translateY(calc(100% - 100px));
+  -webkit-transform: translateY(calc(100% - 100px));
+}
+
+.front-page{
+  /*padding-top: 10%;*/
+  height: 100vh;
+  overflow: hidden;
+  background: #1e5799; /* Old browsers */
+  background: -moz-linear-gradient(top,  #1e5799 0%, #2989d8 100%, #207cca 100%, #7db9e8 100%, #207cca 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(100%,#2989d8), color-stop(100%,#207cca), color-stop(100%,#7db9e8), color-stop(100%,#207cca)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #1e5799 0%,#2989d8 100%,#207cca 100%,#7db9e8 100%,#207cca 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #1e5799 0%,#2989d8 100%,#207cca 100%,#7db9e8 100%,#207cca 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #1e5799 0%,#2989d8 100%,#207cca 100%,#7db9e8 100%,#207cca 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 100%,#207cca 100%,#7db9e8 100%,#207cca 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#207cca',GradientType=0 ); /* IE6-9 */
+}
+
+.content {
+  margin: 0 auto;
+}
+
+#profileCntr {
+  font-size: 17.5em;
+}
+.profile-pic{
+  width: 250px;
+  height: 250px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  background: url(http://i.imgur.com/zcyKPsM.jpg) no-repeat;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  background-size: cover;
+  position: absolute;
+  left: calc(50% - 125px);
+  left: -webkit-calc(50% - 125px);
+  left: -moz-calc(50% - 125px);
+  left: -o-calc(50% - 125px);
+
+  right: 0;
+  top: 15%;
+/*    margin-left: auto;
+  margin-right: auto;*/
+}
+
+#name{
+  font-size: 5em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 48%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#description{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 42%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5em;
+}
+
+#links{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 36%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5em;
+}
+
+h1 {
+  font-weight: 300;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  font-size: 5em;
+  text-shadow: 2px 2px #111111;
+
+}
+
+p{
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  font-family: 'Lato', 'Helvetic Neue', 'Helvetica', sans-serif;
+  font-weight: 100;
+  /*font-size: 1.5rem;*/
+  text-shadow: 1px 1px #111111;
+
+}
+
+.fa {
+  color: white;
+  vertical-align: middle;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.nowrap{
+  white-space: nowrap;
+}
+
+#projects{
+  cursor: pointer;
+  font-size: 3em;
+  font-family: 'Lato', 'Helvetic Neue', 'Helvetica', sans-serif;
+  font-weight: 300;
+  color: #2679cd;
+  padding-top: 10px;
+  text-shadow: none;
+}
+
+#projects i {
+  color: #2679cd;;
+  margin: 0 auto;
+}
+
+.project{
+  margin-top: 10px;
+  background-color: maroon;
+  height: 200px;
 }
 
 
+/* Responsive Design */
+
+@media screen and (max-width: 1350px) {
+
   .front-page{
-    /*padding-top: 10%;*/
-    height: 100vh;
-    overflow: hidden;
-    background: #1e5799; /* Old browsers */
-    background: -moz-linear-gradient(top,  #1e5799 0%, #2989d8 100%, #207cca 100%, #7db9e8 100%, #207cca 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(100%,#2989d8), color-stop(100%,#207cca), color-stop(100%,#7db9e8), color-stop(100%,#207cca)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  #1e5799 0%,#2989d8 100%,#207cca 100%,#7db9e8 100%,#207cca 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  #1e5799 0%,#2989d8 100%,#207cca 100%,#7db9e8 100%,#207cca 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  #1e5799 0%,#2989d8 100%,#207cca 100%,#7db9e8 100%,#207cca 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 100%,#207cca 100%,#7db9e8 100%,#207cca 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#207cca',GradientType=0 ); /* IE6-9 */
+    /*background: green;*/
   }
 
-  .content {
-    margin: 0 auto;
+  #profileCntr {
+    font-size: 14em;
   }
 
-  .profile-pic{
-    width: 250px;
-    height: 250px;
-    border-radius: 150px;
-    -webkit-border-radius: 150px;
-    -moz-border-radius: 150px;
-    background: url(http://i.imgur.com/zcyKPsM.jpg) no-repeat;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    background-size: cover;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 15%;
-    margin-left: auto;
-    margin-right: auto;
+  i {
+    display: none !important;
   }
 
-  #name{
-    font-size: 5em;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 48%;
-    margin-left: auto;
-    margin-right: auto;
+@media screen and (max-width: 1240px) {
+  #profileCntr {
+    font-size: 10em;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  #profileCntr {
+    font-size: 6em;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  #profileCntr {
+    font-size: 3em;
+  }
+}
+
+
+@media screen and (max-width: 850px) {
+
+  .front-page{
+    /*background: red;*/
   }
 
-  #description{
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 42%;
-    margin-left: auto;
-    margin-right: auto;
+  #profileCntr {
+    font-size: 0.1em;
   }
 
-  #links{
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 36%;
-    margin-left: auto;
-    margin-right: auto;
+  i {
+    display: inline-block!important;
   }
 
-  h1 {
-    font-weight: 300;
-    text-align: center;
-    margin: 0 auto;
-    color: white;
-    font-size: 5em;
+  .fa-file-text-o, .fa-graduation-cap {
+    display: none!important;
   }
 
-  p{
-    text-align: center;
-    margin: 0 auto;
-    color: white;
-    font-family: 'Lato', 'Helvetic Neue', 'Helvetica', sans-serif;
-    font-weight: 100;
-    font-size: 1.5em;
+  .nav-labels {
+    display: none!important;
+
   }
 
   .fa {
-    color: white;
-    vertical-align: middle;
+    padding-right: 10px;
+  }
+  h1 {
+    font-size: .5rem;
+    /*line-height: 90%;*/
   }
 
-  a {
-    color: white;
-    text-decoration: none;
-  }
-
-  .nowrap{
-    white-space: nowrap;
-  }
-
-  #projects{
-    cursor: pointer;
-    font-size: 3em;
-    font-family: 'Lato', 'Helvetic Neue', 'Helvetica', sans-serif;
-    font-weight: 300;
-    color: #2679cd;
-    padding-top: 10px;
-  }
-
-  #projects i {
-    color: #2679cd;;
-    margin: 0 auto;
-  }
-
-  .project{
-    margin-top: 10px;
-    background-color: maroon;
-    height: 200px;
-  }
-
-
-  /* Responsive Layout coming soon! */
-  @media screen and (max-width: 600px) {
-
-    .front-page{
-      background: red;
-    }
+  #links{
+    font-size: 1em;
+    left: 20em;
+    bottom: 39%;
 
   }
 
+  #description{
+    font-size: 1.3em;
+  }
 
+  #description {
+    bottom: 44%;
+  }
+
+}
+
+@media screen and (max-width: 750px) {
+
+  #nameWrapper {
+    font-size: .8em;
+  }
+
+  #name {
+    bottom: 51%;
+    padding-top: 11px;
+  }
+}
+
+@media screen and (max-width: 610px){
+
+  #nameWrapper {
+    font-size: .5em;
+  }
+
+  #name {
+    bottom: 53%;
+    padding-top: 25px;
+  }
+}
+
+@media screen and (max-height: 850px){
+
+  .profile-pic{
+    top: 5%;
+  }
+}
+
+@media screen and (max-height: 720px){
+
+  .profile-pic{
+    top: 1%;
+  }
+
+  #name{
+    bottom: 47%;
+  }
+
+  #description{
+    bottom: 28%;
+  }
+
+  #links{
+    bottom: 20%;
+  }
+}
