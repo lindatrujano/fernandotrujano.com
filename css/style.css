@@ -44,8 +44,8 @@ html {
   background: #dcdcdc;
 /*  transform: translateY(90%);
   -webkit-transform: translateY(90%);*/
-  transform: translateY(calc(100% - 100px));
-  -webkit-transform: translateY(calc(100% - 100px));
+  transform: translateY(calc(100% - 90px));
+  -webkit-transform: translateY(calc(100% - 90px));
 }
 
 .front-page{
@@ -97,7 +97,8 @@ html {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 48%;
+  /*bottom: 48%;*/
+  top: calc(41% + 0px);
   margin-left: auto;
   margin-right: auto;
 }
@@ -174,8 +175,76 @@ a {
 
 .project{
   margin-top: 10px;
-  background-color: maroon;
-  height: 200px;
+  background-color: rgba(38, 121, 205, 0.4);
+
+/*  border-color: rgba(38, 121, 205, 1);
+  border-width: 2px;
+  border-style: solid;*/
+
+  /*height: 200px;*/
+  height: auto;
+}
+
+.project-content{
+  margin: 10px;
+  margin-right: 0px;
+}
+
+.project .title{
+  font-size: 1.5em;
+  /*width: 70%;*/
+  float: left ;
+
+}
+
+.project .languages{
+  /*width: 50%;*/
+  float: right;
+  background-color: rgba(38, 121, 205, 1);
+  color: gainsboro;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 5px;
+
+}
+
+.project-description{
+  width: calc(100% - 300px);
+  /*width: 50%;*/
+  float: left;
+  font-size: 1.2em;
+}
+
+.project img {
+  width: 250px;
+  float: right;
+}
+.row{
+  display: inline-block;
+  clear:both;
+  width:100%;
+}
+
+.divider{
+  border-top-style: solid;
+  border-color: rgb(1, 94, 189);
+  border-width: 1px;
+  height: 0px;
+  display: block;
+  padding-bottom: 6px;
+}
+
+.date-divider{
+  color: rgba(38, 121, 205, 1);
+  width: 100%;
+  border-top-style: dashed;
+  border-color: rgb(1, 94, 189);
+  border-width: 1px;
+  height: 0px;
+  display: block;
+  padding-bottom: 6px;
+  margin-top: 6px;
+  max-width: 1000px;
 }
 
 
@@ -199,11 +268,18 @@ a {
   #profileCntr {
     font-size: 10em;
   }
+
 }
 
 @media screen and (max-width: 1090px) {
   #profileCntr {
     font-size: 6em;
+  }
+
+  .date-divider{
+    text-align: center;
+    margin-bottom: 20px;
+    border-style:none;
   }
 }
 
@@ -248,7 +324,7 @@ a {
   #links{
     font-size: 1em;
     left: 20em;
-    bottom: 39%;
+    bottom: 36%;
 
   }
 
@@ -257,7 +333,7 @@ a {
   }
 
   #description {
-    bottom: 44%;
+    bottom: 41%;
   }
 
 }
@@ -272,6 +348,7 @@ a {
     bottom: 51%;
     padding-top: 11px;
   }
+
 }
 
 @media screen and (max-width: 610px){
@@ -284,6 +361,37 @@ a {
     bottom: 53%;
     padding-top: 25px;
   }
+
+  .project img {
+    width: 100%;
+  }
+
+  .project-description{
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .project .languages{
+    margin-right: 20%;
+  }
+
+  .profile-pic{
+    top: 1%;
+  }
+
+  #name{
+    bottom: 47%;
+  }
+
+  #description{
+    bottom: 28%;
+  }
+
+  #links{
+    bottom: 20%;
+  }
+
 }
 
 @media screen and (max-height: 850px){
@@ -310,4 +418,28 @@ a {
   #links{
     bottom: 20%;
   }
+}
+@media screen and (max-height: 550px){
+  .profile-pic{
+    transform: scale(.7);
+  }
+  #description{
+    font-size: 1.1em;
+    bottom: 31%;
+  }
+}
+
+@media screen and (max-height: 400px){
+  .profile-pic{
+    transform: scale(.5);
+    top: -10%;
+  }
+  #nameWrapper {
+    font-size: .5em;
+  }
+  #description{
+    font-size: 1.2em;
+    bottom: 31%;
+  }
+
 }

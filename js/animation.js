@@ -28,9 +28,9 @@ var tl = new TimelineMax({
     tl.fromTo(".profile-pic", .35 ,{left: "-webkit-calc(50vw + 0em - 125px)"}, {top: "10px", width: "60px", height: "60px", left: '-webkit-calc(0vw + 1em + 0px)'}, "-=.35");
 
 
-    tl.fromTo("#name", .35 ,{fontSize: "5em"},{top: "5px", fontSize: "3.5em"}, "-=.35");
+    tl.fromTo("#name", .35 ,{fontSize: "5em", top:"calc(41% + 0px)" },{top: "calc(0% + 5px)", fontSize: "3.5em"}, "-=.35");
     if (window.innerWidth < 445) tl.to("#last-name", .35, {opacity: 0, fontSize: ".5em"}, "-=.35").to("#name", .35, {left: "-15%"}, '-=.35') //delete last name if small window
-    else tl.to("#name", .35 ,{top: "5px", right: '21%'}, "-=.35");
+    else tl.to("#name", .35 ,{ right: '21%'}, "-=.35");
 
     // tl.to("#links", .05 ,{left: '50%'}, "-=.35");
 
@@ -41,8 +41,6 @@ var tl = new TimelineMax({
 
     tl.to("#links", .35 ,{top: "30px"}, "-=.35");
     tl.to("#description", .35 ,{opacity: 0}, "-=.35");
-
-
 
     TweenMax.to(window, 2, {scrollTo: {y: "1"}}); //Start at top
 
@@ -61,7 +59,10 @@ var tl = new TimelineMax({
 
         .on ("progress", function(e){
             console.log(e.progress);
-            if (e.progress <= 0)     TweenMax.to(window, 2, {scrollTo: {y: "1"}}); //Address werid jumbing bug with scrollTo
+            if (e.progress <= 0)    {
+                console.log("Correct scroll")
+                TweenMax.to(window, 2, {scrollTo: {y: "1"}}); //Address werid jumbing bug with scrollTo
+            }
         })
 
         .on("end", function(e){
