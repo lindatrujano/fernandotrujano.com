@@ -183,18 +183,21 @@ a {
 
   /*height: 200px;*/
   height: auto;
+  font-family: 'Lato', 'Helvetic Neue', 'Helvetica', sans-serif;
 }
 
 .project-content{
   margin: 10px;
   margin-right: 0px;
+  padding-bottom: 6px;
 }
 
 .project .title{
   font-size: 1.5em;
   /*width: 70%;*/
   float: left ;
-
+  font-family: 'Lato', 'Helvetic Neue', 'Helvetica', sans-serif;
+  font-weight: 300;
 }
 
 .project .languages{
@@ -205,19 +208,38 @@ a {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 5px;
+  padding-right: 8px;
 
+}
+
+.project a{
+
+  color: rgb(0, 118, 255);
+  text-decoration: underline;
+}
+
+.project .links{
+  /*width: 50%;*/
+  float: right;
+  background-color: rgba(220, 220, 220, 1);
+  color: rgb(38, 121, 205);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 5px;
+  margin-right: 5px;
 }
 
 .project-description{
-  width: calc(100% - 300px);
+  width: calc(100% - 415px);
   /*width: 50%;*/
-  float: left;
+  float: right;
   font-size: 1.2em;
+  padding-left: 10px;
 }
 
 .project img {
-  width: 250px;
-  float: right;
+  width: 400px;
+  float: left;
 }
 .row{
   display: inline-block;
@@ -373,7 +395,7 @@ a {
   }
 
   .project .languages{
-    margin-right: 20%;
+    /*margin-right: 20%;*/
   }
 
   .profile-pic{
