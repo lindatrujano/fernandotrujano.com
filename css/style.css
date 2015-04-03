@@ -7,6 +7,8 @@ body {
   font-size: 1em;
   tap-highlight-color: transparent;
   -webkit-font-smoothing: subpixel-antialiased;
+  -moz-font-smoothing: subpixel-antialiased;
+  font-smoothing: subpixel-antialiased;
 }
 
 body,
@@ -82,10 +84,10 @@ html {
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   background-size: cover;
   position: absolute;
-/*  left: calc(50% - 125px);
+  left: calc(50% - 125px);
   left: -webkit-calc(50% - 125px);
   left: -moz-calc(50% - 125px);
-  left: -o-calc(50% - 125px);*/
+  left: -o-calc(50% - 125px);
 
   right: 0;
   top: 15%;
