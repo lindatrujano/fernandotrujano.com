@@ -6,12 +6,6 @@ window.mobilecheck = function() {
 
 // window.mobilecheck = function(){ return true } ;  //Force mobile
 
-// init the controller
-var controller = new ScrollMagic.Controller({
-    globalSceneOptions: {
-        triggerHook: "onLeave"
-    }
-});
 
 var tl = new TimelineMax({
     onComplete: function(){
@@ -54,6 +48,13 @@ var tl = new TimelineMax({
 
  if (!window.mobilecheck()){
 
+    // init the controller
+    var controller = new ScrollMagic.Controller({
+        globalSceneOptions: {
+            triggerHook: "onLeave"
+        }
+    });
+
      var scene = new ScrollMagic.Scene({
             triggerElement: "section#pin",
             duration: 1500
@@ -93,9 +94,11 @@ var tl = new TimelineMax({
 else {
     tl.timeScale(.75);
 
+    var scrollUp = 0;
     // Processes a scroll Up event and reverses the animation if necessary
     function processScrollUp() {
-        if ($("#unpin").scrollTop() === 0){
+        scrollUp ++;
+        if ($("#unpin").scrollTop() === 0 && scrollUp > 5) {
             $('#unpin').css('overflow', "hidden");
             tl.reverse();
         }
@@ -103,6 +106,8 @@ else {
 
     // Processes a scroll Down event and starts the animation if necessary
     function processScrollDown(){
+        console.log("scroll down")
+        scrollUp = 0
         if ($("body").scrollTop() < 5) {
             tl.play();
         }
@@ -117,9 +122,9 @@ else {
     var lastY = 0 ;
     document.addEventListener("touchmove", function(e) {
         currentY =  e.changedTouches[0].clientY;
-        lastY < currentY ? processScrollUp(): processScrollDown();
+        if (lastY) lastY < currentY ? processScrollUp(): processScrollDown();
         lastY = currentY;
-     }, false);
+     }, true);
 
     $("#projects").click(function(e){
         tl.play();
