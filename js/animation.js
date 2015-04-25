@@ -130,3 +130,7 @@ else {
         tl.play();
     });
 }
+
+$(document).ready(function(){
+    if (mobilecheck()) $('p').css("font-weight", "300")
+})
