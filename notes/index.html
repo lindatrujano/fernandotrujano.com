@@ -1,9 +1,6 @@
 <!--
-Hello source code viewer! Nothing special here, just some bootstrap, sorry. There is a script at the end to open all links in a new tab (ie make all anchor tags target="_blank"). I used jQuery because Jquery > regex
-
+Hello source code viewer! Nothing special here, just some bootstrap and angular.js, sorry.
 -->
-
-
 <!DOCTYPE html>
 <html lang ="en">
     <head>
@@ -11,6 +8,9 @@ Hello source code viewer! Nothing special here, just some bootstrap, sorry. Ther
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+        <script src="app.js"></script>
+        <script src="controllers.js"></script>
         <style>
 
             .about{
@@ -18,7 +18,7 @@ Hello source code viewer! Nothing special here, just some bootstrap, sorry. Ther
                 border-top: 1px solid #ccc;
 
             }
-
+            a { text-decoration: none}
             .top {
                 text-align: left;
                 top: 10px;
@@ -35,7 +35,6 @@ Hello source code viewer! Nothing special here, just some bootstrap, sorry. Ther
                 background: rgba(255, 255, 255, 0.7);
                 padding:5px
             }
-
         </style>
 
         <!-- Analytics -->
@@ -50,271 +49,65 @@ Hello source code viewer! Nothing special here, just some bootstrap, sorry. Ther
         </script>
 
     </head>
+    <body ng-app="notesApp" ng-controller="notesController">
+      <div class="container">
+          <div class="row clearfix">
+              <div class="col-md-12 column">
 
-    <div class="container">
-        <div class="row clearfix">
-            <div class="col-md-12 column">
+                  <div class="page-header">
+                      <h1>
+                          Notes <small><small> By <a href= "http://www.fernandotrujano.com" >Fernando Trujano </a> </small></small>
+                      </h1>
+                  </div>
 
-                <div class="page-header">
-                    <h1>
-                        Notes <small><small> By <a href= "http://www.fernandotrujano.com" >Fernando Trujano </a> </small></small>
-                    </h1>
-                </div>
+                  <div  class="tabbable">
 
-                <div  class="tabbable">
+                    <ul class="nav nav-tabs"  >
+                      <li ng-repeat="category in notesList" ng-class="{active : $first}"><a data-toggle="tab" href="#{{category.id}}">{{category.name}}</a></li>
+                    </ul>
 
-                  <ul class="nav nav-tabs">
-
-                    <li class="active"><a data-toggle="tab" href="#math">Math</a></li>
-                    <li class=""><a data-toggle="tab" href="#physics">Physics</a></li>
-                    <li class=""><a data-toggle="tab" href="#history">History</a></li>
-                  </ul>
-
-                  <div class="tab-content">
-
-                    <div id="math" class="tab-pane fade in active">
-                        <div class="row clearfix">
-                            <div class="col-md-12 column">
-                                <div class="row clearfix">
-
-                                    <div class="panel-group" id="accordion">
-                                        <!-- 18.06 -->
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                              <h4 class="panel-title">
-                                                <a href="18.06.pdf" ><button type="button" class="btn  btn-primary pull-right">See notes</button></a>
-                                                <a data-toggle="collapse" data-parent="#accordion" href="#1806">
-                                                  <h2> Linear Algebra <small> 18.06 </small> </h2>
-                                                </a>
-                                              </h4>
-                                            </div>
-                                            <div id="1806" class="panel-collapse collapse in">
-                                                <div class="panel-body">
+                    <div class="tab-content">
 
 
-                                                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <div ng-repeat="category in notesList" id="{{category.id}}" class="tab-pane fade" ng-class="{active: $first ,in:$first}">
+                            <div class="row clearfix">
+                                <div class="col-md-12 column">
+                                    <div class="row clearfix">
 
-                                                      <div class="carousel-inner">
-                                                        <div class="item active">
-                                                          <img src="images/1806.jpg" alt="...">
-                                                          <div class="carousel-caption top" >
-                                                            <p>
-                                                            <strong> School: </strong> <a href="http://mit.edu" > MIT </a> </br>
-                                                            <strong> Professor: </strong> <a href="http://www-math.mit.edu/~gs/">Gilbert Strang </a></br>
-                                                            <strong> Textbook: </strong> <a href="http://math.mit.edu/linearalgebra/"> Gilbert Strang, Introduction to Linear Algebra, 4th Edition</a>
-                                                            </p>
-                                                          </div>
-                                                          <div class="carousel-caption" s>
-                                                             <a href="18.06.pdf" ><button type="button" class="btn  btn-lg btn-primary">See notes <small>(8.9 MB)</small></button></a>
+                                        <div class="panel-group" id="accordion">
+                                            <div ng-repeat="course in category.courses" class="panel panel-default">
+                                                  <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                      <a href="{{course.notes}}" ><button type="button" class="btn  btn-primary pull-right">See notes</button></a>
+                                                      <a data-toggle="collapse" data-parent="#accordion" href="#{{course.id}}">
+                                                        <h2> {{course.name}}<small> {{course.number}} </small> </h2>
+                                                      </a>
+                                                    </h4>
+                                                  </div>
+                                                  <div id="{{course.id}}" class="panel-collapse collapse" ng-class="{in: $first}">
+                                                      <div class="panel-body">
+
+                                                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+                                                          <div class="carousel-inner">
+                                                            <div class="item active">
+                                                              <img src="images/{{course.bgimg}}" alt="...">
+                                                              <div class="carousel-caption top" >
+                                                                <p>
+                                                                <strong> School: </strong> <a href="{{course.schoolLink}}" > {{course.school}} </a> </br>
+                                                                <strong> Professor: </strong> <a href="{{course.professorLink}}">{{course.professor}} </a></br>
+                                                                <strong> Textbook: </strong> <a href="{{course.textbookLink}}"> {{course.textbook}}</a>
+                                                                </p>
+                                                              </div>
+                                                              <div class="carousel-caption" >
+                                                                 <a href="{{course.notes}}" ><button type="button" class="btn  btn-lg btn-primary">See notes <small>({{course.notesSize}})</small></button></a>
+                                                              </div>
+                                                            </div>
                                                           </div>
                                                         </div>
-
-                                                    </div>
-                                                </div>
+                                                      </div>
+                                                 </div>
                                             </div>
-                                        </div>
-                                        </div>
-
-                                        <!-- 18.02 -->
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                              <h4 class="panel-title">
-                                                <a href="18.02.pdf" ><button type="button" class="btn  btn-primary pull-right">See notes</button></a>
-                                                <a data-toggle="collapse" data-parent="#accordion" href="#1802">
-                                                  <h2> Multivariable Calculus<small> 18.02 </small> </h2>
-                                                </a>
-                                              </h4>
-                                            </div>
-                                            <div id="1802" class="panel-collapse collapse">
-                                                <div class="panel-body">
-                                                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                                                      <div class="carousel-inner">
-                                                        <div class="item active">
-                                                          <img src="images/1802.jpg" alt="...">
-                                                          <div class="carousel-caption top" >
-                                                            <p>
-
-                                                                <strong> School: </strong> <a href="http://mit.edu" > MIT </a>  </br>
-                                                                <strong> Lecturer </strong> <a href="https://math.mit.edu/people/profile.php?pid=1464">William Minicozzi </a></br>
-                                                                <strong> Textbook: </strong> <a href="http://www.amazon.com/exec/obidos/ASIN/0130339679/ref=nosim/mitopencourse-20"> Edwards and Penney, Multivariable calculus, 6th edition, 2002,</a>
-                                                            </p>
-                                                          </div>
-                                                          <div class="carousel-caption" s>
-                                                             <a href="18.02.pdf" ><button type="button" class="btn btn-lg btn-primary">See notes <small>(15.7 MB)</small></button></a>
-                                                          </div>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        </div>
-
-                                        <!-- AlgebraII -->
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                              <h4 class="panel-title">
-                                                <a href="Algebra II.pdf" ><button type="button" class="btn  btn-primary pull-right">See notes</button></a>
-                                                <a data-toggle="collapse" data-parent="#accordion" href="#algebraII">
-                                                  <h2> Algebra II <small>PreAP  </small> </h2>
-                                                </a>
-                                              </h4>
-                                            </div>
-                                            <div id="algebraII" class="panel-collapse collapse">
-                                                <div class="panel-body">
-                                                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                                                      <div class="carousel-inner">
-                                                        <div class="item active">
-                                                          <img src="images/algebraII.jpg" alt="Algebra II">
-                                                          <div class="carousel-caption top" >
-                                                            <p>
-                                                                <strong> School: </strong> <a href="http//ssh.springbranchisd.edu"> Stratford High School </a> </br>
-                                                                <strong> Teacher: </strong> Sue Heine </br>
-                                                                <strong> Textbook: </strong> Holt Algebra II Texas
-                                                            </p>
-                                                          </div>
-                                                          <div class="carousel-caption" s>
-                                                             <a href="Algebra II.pdf" ><button type="button" class="btn btn-lg btn-primary">See notes <small>(17.1 MB)</small></button></a>
-                                                          </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        </div>
-
-                                         <!-- Geometry -->
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                              <h4 class="panel-title">
-                                                <a href="Geometry.pdf" ><button type="button" class="btn  btn-primary pull-right">See notes</button></a>
-
-                                                <a data-toggle="collapse" data-parent="#accordion" href="#geometry">
-                                                  <h2> Geometry<small> PreAP </small> </h2>
-                                                </a>
-                                              </h4>
-                                            </div>
-                                            <div id="geometry" class="panel-collapse collapse">
-                                                <div class="panel-body">
-                                                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                                                      <div class="carousel-inner">
-                                                        <div class="item active">
-                                                          <img src="images/geometry.jpg" alt="...">
-                                                          <div class="carousel-caption top" >
-                                                            <p>
-                                                                <strong> School: </strong> <a href="http//ssh.springbranchisd.edu"> Stratford High School </a> </br>
-                                                                <strong> Teacher: </strong> Sue Heine </br>
-                                                                <strong> Textbook: </strong> Holt Geometry Texas
-                                                            </p>
-                                                          </div>
-                                                          <div class="carousel-caption" s>
-                                                             <a href="Geometry.pdf" ><button type="button" class="btn  btn-lg btn-primary">See notes <small>(7.2 MB)</small></button></a>
-                                                          </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="physics" class="tab-pane fade">
-                        <div class="row clearfix">
-                            <div class="col-md-12 column">
-                                <div class="row clearfix">
-
-                                    <div class="panel-group" id="accordion">
-
-                                        <!-- 8.02 -->
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                              <h4 class="panel-title">
-                                                <a href="8.02.pdf" ><button type="button" class="btn  btn-primary pull-right">See notes </button></a>
-
-                                                <a data-toggle="collapse" data-parent="#accordion" href="#1806">
-                                                  <h2> Electricity and Magnetism <small> 8.02</small> </h2>
-                                                </a>
-                                              </h4>
-                                            </div>
-                                            <div id="1806" class="panel-collapse collapse in">
-                                                <div class="panel-body">
-
-
-                                                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-
-                                                      <div class="carousel-inner">
-                                                        <div class="item active">
-                                                          <img src="images/802.jpg" alt="8.02">
-                                                          <div class="carousel-caption top" >
-                                                            <p>
-                                                                <strong> School: </strong> <a href="http://mit.edu" > MIT </a>  </br>
-                                                                <strong> Professor: </strong> <a href= "http://web.mit.edu/physics/people/faculty/thaler_jesse.html">Jesse Thaler </a>  </br>
-                                                                <strong> Textbook: </strong> Online Notes
-                                                            </p>
-                                                          </div>
-                                                          <div class="carousel-caption" s>
-                                                             <a href="8.02.pdf" ><button type="button" class="btn btn-lg btn-primary">See notes <small>(7.8 MB)</small></button></a>
-                                                          </div>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="history" class="tab-pane fade">
-                        <div class="row clearfix">
-                            <div class="col-md-12 column">
-                                <div class="row clearfix">
-
-                                    <div class="panel-group" id="accordion">
-
-                                        <!-- APUSH -->
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                              <h4 class="panel-title">
-                                                <a href="apush.pdf" ><button type="button" class="btn  btn-primary pull-right">See notes</button></a>
-                                                <a data-toggle="collapse" data-parent="#accordion" href="#1806">
-                                                  <h2> AP United States History <small> APUSH</small> </h2>
-                                                </a>
-                                              </h4>
-                                            </div>
-                                            <div id="1806" class="panel-collapse collapse in">
-                                                <div class="panel-body">
-                                                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                                                      <div class="carousel-inner">
-                                                        <div class="item active">
-                                                          <img src="images/apush.jpg" alt="...">
-                                                          <div class="carousel-caption top" >
-                                                            <p>
-                                                                <strong> School: </strong> <a href="http//ssh.springbranchisd.edu"> Stratford High School </a>  </br>
-                                                                <strong> Teacher: </strong> <a href="http://ssh.springbranchisd.com/Faculty/Teachers/SocialStudies/JaneDuke/tabid/17575/Default.aspx">Jane Duke </a></br>
-                                                                <strong> Textbook: </strong> <a href="http://teachersites.schoolworld.com/webpages/SColl/resources.cfm?subpage=1604124">The American Pageant</a>
-                                                            </p>
-                                                          </div>
-                                                          <div class="carousel-caption" s>
-                                                             <a href="apush.pdf" ><button type="button" class="btn btn-lg btn-primary">See notes <small>(48.5 MB)</small></button></a>
-                                                          </div>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         </div>
 
                                     </div>
@@ -323,27 +116,29 @@ Hello source code viewer! Nothing special here, just some bootstrap, sorry. Ther
                         </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="row about">
+                  <div class="row about">
 
-                    <h4> About:  <small>Hi. I form a weird sentimental attachement to my notes, but they take up a lot of space, so I scanned them in order to forgive myself for throwing them away. Now that they are digitalized, I figured I might as well share them with everyone, through a pretty site. So go ahead, click on a subject and select a class to see my notes. For some classes, it is better if you actually download/save the notes (vs viewing them in browser) so you can see the chapter/unit bookmarks. You can do this my right clicking > Save link as or clicking the save button once the pdf opens in browser. I'll keep adding classes as I take them. If this can help just one person do better in a class, then all the designing/scanning was worth it.
-                    I compressed the pdf's to make them web friendly, but if for some reason you need super high quality, you can email me. Also, if this somehow inspired you to share your notes, let me know. We'll figure something out. <small> No, I am not making money from this. </small> </small>  </h4>
+                      <h4> About:  <small>Hi. I form a weird sentimental attachement to my notes, but they take up a lot of space, so I scanned them in order to forgive myself for throwing them away. Now that they are digitalized, I figured I might as well share them with everyone, through a pretty site. So go ahead, click on a subject and select a class to see my notes. For some classes, it is better if you actually download/save the notes (vs viewing them in browser) so you can see the chapter/unit bookmarks. You can do this my right clicking > Save link as or clicking the save button once the pdf opens in browser. I'll keep adding classes as I take them. If this can help just one person do better in a class, then all the designing/scanning was worth it.
+                      I compressed the pdf's to make them web friendly, but if for some reason you need super high quality, you can email me. Also, if this somehow inspired you to share your notes, let me know. We'll figure something out. <small> No, I am not making money from this. </small> </small>  </h4>
 
-                </div>
-            </div>
-
+                  </div>
+              </div>
 
 
-                <!-- Open all Links in new tab -->
-                 <script>
-                $(document).ready(function(){
-                    $('a').attr('target', '_blank');
-                });
-                 </script>
 
-            </div>
-        </div>
-    </div>
+                  <!-- Open all Links in new tab -->
+                   <script>
+                  $(document).ready(function(){
+                      $('a').attr('target', '_blank');
+                  });
+                   </script>
+
+              </div>
+          </div>
+      </div>
+      {{notesList.math[0].name}}
+    </body>
 
 <html>
+
