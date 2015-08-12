@@ -28,7 +28,7 @@ module.exports = function(grunt) {
     'compile-handlebars' : {
         allStatic: {
             files: [{
-                src: "src/home.html",
+                src: "src/home.hbs",
                 dest: "build/index.html"
             }],
             templateData: 'src/test.json',
@@ -54,6 +54,24 @@ module.exports = function(grunt) {
         }
     },
 
+    watch: {
+      scripts: {
+        files: 'src/js/*.js',
+        tasks: ['concat', 'copy'],
+        options: {
+          interrupt: true,
+        },
+      },
+      css: {
+        files: 'src/scss/*.scss',
+        tasks: ['sass'],
+      },
+      pages: {
+        files: ['src/*.hbs', 'src/partials/*.hbs'],
+        tasks: ['compile-handlebars']
+      }
+    },
+
   });
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -61,8 +79,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-compile-handlebars');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', ['concat', 'copy', 'sass', 'compile-handlebars']);
+
+  grunt.registerTask('default', ['concat', 'copy', 'sass', 'compile-handlebars', 'watch']);
   grunt.registerTask('build', ['concat', 'uglify', 'sass', 'compile-handlebars']);
 
 };
