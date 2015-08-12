@@ -1,12 +1,17 @@
 $(document).ready(function(){
   $('#menu').stickThis()
   $(document).scroll(function(e){
-    var scrollPos = $(document).scrollTop()+50
+    var scrollPos = $(document).scrollTop()+50 //+ $(window).height()/4
     var sections = $('body > section'),
         i, len, section;
     for (i=1, len = sections.length; i<len; i++){
       section = $(sections[i])
       sectionPos = section.offset().top
+      if($(window).scrollTop() + $(window).height() == $(document).height()) {
+        $('#menu.cloned > a').removeClass('selected')
+        $("#menu.cloned > a[href=#contact]").addClass('selected')
+        return
+      }
       if (scrollPos > sectionPos && (sections.length  === i+1 || $(sections[i+1]).offset().top >= scrollPos)){
         $('#menu.cloned > a').removeClass('selected')
         $('#menu.cloned > a[href=#'+section.attr('id')+']').addClass('selected')
@@ -21,7 +26,7 @@ $(document).ready(function(){
         newPos  = $(section).offset().top
 
     $('body').animate({
-      'scrollTop' : newPos + "px"
+      'scrollTop' : newPos - 45 + "px"
     }, 700)
 
   })

@@ -5,6 +5,13 @@ body {
 
 }
 
+section > h2 {
+  color: #2679cd;
+  font-size: 3em;
+  text-align:center;
+  margin-bottom: 10px;
+}
+
 #main {
   overflow: auto;
   height: 100vh;
@@ -23,11 +30,11 @@ body {
 }
 
 #profile-pic {
-    width: 250px;
-    height: 250px;
-    border-radius: 150px;
-    -webkit-border-radius: 150px;
-    -moz-border-radius: 150px;
+    width: 150px;
+    height: 150px;
+    border-radius:50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
     background: url(http://i.imgur.com/zcyKPsM.jpg) no-repeat;
     box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
@@ -43,8 +50,7 @@ body {
   text-align: center;
   margin: 8px auto;
   color: white;
-  /*font-size: 4em;*/
-  font-size: 2.5em;
+  font-size: 2.2em;
   line-height: 38px;
 
 }
@@ -54,7 +60,7 @@ body {
   margin: 0 auto;
   color: white;
   font-weight: 100;
-  font-size: 1.3em;
+  font-size: 1.0em;
 }
 
 .fa {
@@ -85,10 +91,9 @@ body {
 #menu {
   height: 40px;
   background-color: yellow;
-  /*font-size: 1.5em;*/
-  font-size: 1.2em;
+  font-size: 0.9em;
   text-align: center;
-  padding-top:10px;
+  padding-top:15px;
   color: white;
   background-color: rgba(8, 88, 177, 0.8);
 
@@ -106,16 +111,28 @@ body {
   /*height: 100vh;*/
 }
 #education {
-  background-color: orange;
-  height: 100vh;
+  /*background-color: #6ACCB1;*/
+  background-color: rgb(50, 114, 185);
 }
+
+#education > .project {
+  /*background-color: rgba(0, 0, 0, 0.22);*/
+  background-color: rgba(226, 207, 207, 0.17);
+  color: white;
+}
+
+#education > h2, #contact > h2 {
+  color: white;
+}
+
+
 #work {
-  background-color: white;
-  height: 100vh;
+  background-color: #dcdcdc;
+  height: 95vh;
 }
 #contact {
-  background-color: yellow;
-  height: 100vh;
+  background-color: rgb(50, 114, 185);
+  /*height: 30vh;*/
 }
 
 h2 {
@@ -135,9 +152,7 @@ h2 {
 .date-divider{
   color: rgba(38, 121, 205, 1);
   width: 100%;
-  border-top-style: dashed;
-  border-color: rgb(1, 94, 189);
-  border-width: 1px;
+
   height: 0px;
   display: block;
   padding-bottom: 6px;
@@ -209,8 +224,7 @@ h2 {
 }
 
 .project-description{
-  /*width: calc(100% - 415px);*/
-  /*float: right;*/
+
   width: initial;
   font-size: 1.2em;
   padding: 10px;
@@ -228,4 +242,58 @@ section {
 
 #menu a.selected {
   color: orange;
+}
+
+@media only screen and (min-width: 400px) {
+
+  #menu {
+    padding-top:10px;
+    font-size: 1.2em;
+  }
+
+  #name {
+    font-size: 2.5em;
+    margin: 20px auto;
+
+  }
+
+  #main p,#main nav{
+    font-size: 1.3em;
+  }
+
+}
+@media only screen and (min-width: 750px) {
+
+  #profile-pic {
+      width: 250px;
+      height: 250px;
+      margin-top: 10vh;
+  }
+
+  .project-description {
+    width: calc(100% - 415px);
+    float: right;
+  }
+
+  .project img {
+    width: 395px;
+    float: left;
+  }
+
+  .date-divider {
+    border-top-style: dashed;
+    border-color: rgb(1, 94, 189);
+    border-width: 1px;
+    text-align: left;
+  }
+
+  #name {
+    font-size: 4em;
+  }
+
+  #menu {
+    height: 45px;
+    padding-top:5px;
+    font-size: 1.5em;
+  }
 }
