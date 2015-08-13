@@ -112,23 +112,19 @@ section > h2 {
 }
 #education {
   /*background-color: #6ACCB1;*/
-  background-color: rgb(50, 114, 185);
+  // background-color: rgb(50, 114, 185);
+  background-color: rgb(197, 199, 199);
 }
 
-#education > .project {
-  /*background-color: rgba(0, 0, 0, 0.22);*/
-  background-color: rgba(226, 207, 207, 0.17);
-  color: white;
-}
 
-#education > h2, #contact > h2 {
+#contact > h2 {
   color: white;
 }
 
 
 #work {
   background-color: #dcdcdc;
-  height: 95vh;
+  // height: 95vh;
 }
 #contact {
   background-color: rgb(50, 114, 185);
@@ -238,6 +234,7 @@ h2 {
 
 section {
   padding: 10px;
+  padding-bottom: 50px;
 }
 
 #menu a.selected {

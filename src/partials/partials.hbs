@@ -1,1 +1,27 @@
-Partial test
+<div class="container project">
+      <div class="row project-content">
+        <span class="title">{{title}}</span>
+        <span class="languages">
+          {{#each languages}}
+            {{this}}
+            {{#unless @last}}|{{/unless}}
+          {{/each}}
+        </span>
+        <span class="links">
+          {{#each links}}
+            <a href = "{{url}}">{{name}}</a>
+
+            {{#unless @last}}|{{/unless}}
+
+          {{/each}}
+        </span>
+
+      </div>
+      <div class="row divider"></div>
+      <div class="row">
+       <div class="project-description" style="white-space:pre-line"> {{description}}
+       </div>
+        <img src="../img/customWorkoutTimer.png" />
+      </div>
+</div>
+

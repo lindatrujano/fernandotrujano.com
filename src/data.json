@@ -1,0 +1,244 @@
+{
+    "summary" : "I am a stuff stuff",
+
+    "projects" : [
+      {
+        "year" : "2015",
+        "entries": [
+            {
+                "title" : "Custom Workout Timerr",
+                "description" : "This is an app that does this \n and that",
+                "languages" : ["a","b","c"],
+                "links" : [
+                    {
+                        "name" : "github",
+                        "url" : "http://github.com"
+                    },
+                    {
+                        "name" : "demo",
+                        "url" : "http://google.com"
+                    }
+
+                ]
+
+            },
+            {
+                "title" : "Custom Workout Timer2",
+                "description" : "This is an app that does this \n and asdfasdfthat",
+                "languages" : ["a","b","c", "asdfasdf"],
+                "links" : [
+                    {
+                        "name" : "github2",
+                        "url" : "http://github.com"
+                    },
+                    {
+                        "name" : "demo2",
+                        "url" : "http://google.com"
+                    }
+
+                ]
+
+            }
+        ]
+      },
+      {
+        "year" : "2014",
+        "entries": [
+            {
+                "title" : "asdfasdfCustom Workout Timerr",
+                "description" : "This is anasdfasdf app that does this \n and that",
+                "languages" : ["a","b","c"],
+                "links" : [
+                    {
+                        "name" : "gasdfithub",
+                        "url" : "http://github.com"
+                    },
+                    {
+                        "name" : "demo",
+                        "url" : "http://google.com"
+                    }
+
+                ]
+
+            },
+            {
+                "title" : "Custom Wasfadsforkout Timer2",
+                "description" : "This is asdfadsfan app that does this \n and asdfasdfthat",
+                "languages" : ["a","asdfasdfb","c", "asdfasdf"],
+                "links" : [
+                    {
+                        "name" : "githasdfasdfub2",
+                        "url" : "http://github.com"
+                    },
+                    {
+                        "name" : "deasdffmo2",
+                        "url" : "http://google.com"
+                    }
+
+                ]
+
+            }
+        ]
+      }
+    ],
+    "education" : [
+      {
+        "year" : "2015",
+        "entries": [
+            {
+                "title" : "Custom Workout Timerr",
+                "description" : "This is an app that does this \n and that",
+                "languages" : ["a","b","c"],
+                "links" : [
+                    {
+                        "name" : "github",
+                        "url" : "http://github.com"
+                    },
+                    {
+                        "name" : "demo",
+                        "url" : "http://google.com"
+                    }
+
+                ]
+
+            },
+            {
+                "title" : "Custom Workout Timer2",
+                "description" : "This is an app that does this \n and asdfasdfthat",
+                "languages" : ["a","b","c", "asdfasdf"],
+                "links" : [
+                    {
+                        "name" : "github2",
+                        "url" : "http://github.com"
+                    },
+                    {
+                        "name" : "demo2",
+                        "url" : "http://google.com"
+                    }
+
+                ]
+
+            }
+        ]
+      },
+      {
+        "year" : "2014",
+        "entries": [
+            {
+                "title" : "asdfasdfCustom Workout Timerr",
+                "description" : "This is anasdfasdf app that does this \n and that",
+                "languages" : ["a","b","c"],
+                "links" : [
+                    {
+                        "name" : "gasdfithub",
+                        "url" : "http://github.com"
+                    },
+                    {
+                        "name" : "demo",
+                        "url" : "http://google.com"
+                    }
+
+                ]
+
+            },
+            {
+                "title" : "Custom Wasfadsforkout Timer2",
+                "description" : "This is asdfadsfan app that does this \n and asdfasdfthat",
+                "languages" : ["a","asdfasdfb","c", "asdfasdf"],
+                "links" : [
+                    {
+                        "name" : "githasdfasdfub2",
+                        "url" : "http://github.com"
+                    },
+                    {
+                        "name" : "deasdffmo2",
+                        "url" : "http://google.com"
+                    }
+
+                ]
+
+            }
+        ]
+      }
+    ],
+    "work" : [
+      {
+        "year" : "2015",
+        "entries": [
+            {
+                "title" : "Custom Workout Timerr",
+                "description" : "This is an app that does this \n and that",
+                "languages" : ["a","b","c"],
+                "links" : [
+                    {
+                        "name" : "github",
+                        "url" : "http://github.com"
+                    },
+                    {
+                        "name" : "demo",
+                        "url" : "http://google.com"
+                    }
+
+                ]
+
+            },
+            {
+                "title" : "Custom Workout Timer2",
+                "description" : "This is an app that does this \n and asdfasdfthat",
+                "languages" : ["a","b","c", "asdfasdf"],
+                "links" : [
+                    {
+                        "name" : "github2",
+                        "url" : "http://github.com"
+                    },
+                    {
+                        "name" : "demo2",
+                        "url" : "http://google.com"
+                    }
+
+                ]
+
+            }
+        ]
+      },
+      {
+        "year" : "2014",
+        "entries": [
+            {
+                "title" : "asdfasdfCustom Workout Timerr",
+                "description" : "This is anasdfasdf app that does this \n and that",
+                "languages" : ["a","b","c"],
+                "links" : [
+                    {
+                        "name" : "gasdfithub",
+                        "url" : "http://github.com"
+                    },
+                    {
+                        "name" : "demo",
+                        "url" : "http://google.com"
+                    }
+
+                ]
+
+            },
+            {
+                "title" : "Custom Wasfadsforkout Timer2",
+                "description" : "This is asdfadsfan app that does this \n and asdfasdfthat",
+                "languages" : ["a","asdfasdfb","c", "asdfasdf"],
+                "links" : [
+                    {
+                        "name" : "githasdfasdfub2",
+                        "url" : "http://github.com"
+                    },
+                    {
+                        "name" : "deasdffmo2",
+                        "url" : "http://google.com"
+                    }
+
+                ]
+
+            }
+        ]
+      }
+    ]
+}

@@ -31,7 +31,7 @@ module.exports = function(grunt) {
                 src: "src/home.hbs",
                 dest: "build/index.html"
             }],
-            templateData: 'src/test.json',
+            templateData: 'src/data.json',
             partials: ['src/partials/partials.hbs']
         }
     },
@@ -49,7 +49,7 @@ module.exports = function(grunt) {
         },
         dist: {
             files: {
-                'build/style.css': 'src/scss/style.scss'
+              'build/style.css': 'src/scss/style.scss'
             }
         }
     },
@@ -67,7 +67,7 @@ module.exports = function(grunt) {
         tasks: ['sass'],
       },
       pages: {
-        files: ['src/*.hbs', 'src/partials/*.hbs'],
+        files: ['src/*.hbs', 'src/partials/*.hbs', 'src/*.json'],
         tasks: ['compile-handlebars']
       }
     },
