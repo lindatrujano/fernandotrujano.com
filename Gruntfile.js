@@ -64,13 +64,20 @@ module.exports = function(grunt) {
       },
       css: {
         files: 'src/scss/*.scss',
-        tasks: ['sass'],
       },
       pages: {
         files: ['src/*.hbs', 'src/partials/*.hbs', 'src/*.json'],
         tasks: ['compile-handlebars']
       }
     },
+
+    cssmin: {
+      build: {
+        files: {
+          'build/style.css': ['build/style.css']
+        }
+      }
+    }
 
   });
 
@@ -80,9 +87,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-
-  grunt.registerTask('default', ['concat', 'copy', 'sass', 'compile-handlebars', 'watch']);
-  grunt.registerTask('build', ['concat', 'uglify', 'sass', 'compile-handlebars']);
+  grunt.registerTask('default', ['concat', 'copy', 'sass','compile-handlebars', 'watch']);
+  grunt.registerTask('build', ['concat', 'uglify', 'sass', 'cssmin', 'compile-handlebars']);
 
 };
