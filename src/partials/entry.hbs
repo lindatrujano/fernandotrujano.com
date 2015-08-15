@@ -1,31 +1,35 @@
 <div class="container project">
       <div class="row project-content">
         <span class="title">{{title}}</span>
-        <span class="languages">
-          {{#each languages}}
-            {{this}}
-            {{#unless @last}}|{{/unless}}
-          {{/each}}
-        </span>
-        <span class="links">
-          {{#each links}}
-            {{#if url}}
-            <a href = "{{url}}">{{name}}</a>
-            {{else}}
-              {{name}}
-            {{/if}}
+        {{#if languages}}
+          <span class="languages">
+            {{#each languages}}
+              {{this}}
+              {{#unless @last}}|{{/unless}}
+            {{/each}}
+          </span>
+        {{/if}}
+        {{#if links}}
+          <span class="links">
+            {{#each links}}
+              {{#if url}}
+              <a href = "{{url}}">{{name}}</a>
+              {{else}}
+                {{name}}
+              {{/if}}
 
-            {{#unless @last}}|{{/unless}}
+              {{#unless @last}}|{{/unless}}
 
-          {{/each}}
-        </span>
+            {{/each}}
+          </span>
+        {{/if}}
 
       </div>
       <div class="row divider"></div>
-      <div class="row">
+      <div class="row" >
        <div class="project-description" style="white-space:pre-line"> {{{description}}}
        </div>
-        <img src="{{imageUrl}}" alt="{{title}}" />
+       <img src="{{imageUrl}}" alt="{{title}}"/>
       </div>
 </div>
 

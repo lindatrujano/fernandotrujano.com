@@ -1,11 +1,12 @@
 {
-    "summary" : "I am a stuff stuff",
+    "summary" : "I am a full stack engineer and a junior at MIT studying Computer Science and Electrical Engineering.",
 
-    //Asterisks
-    //HackMIT Collage
-    //HackMIT Puzzle
-    //Heartbeat
-    //Email annoyer
+    //Maybe
+        //Asterisks
+        //HackMIT Collage
+        //HackMIT Puzzle
+        //Heartbeat
+        //Email annoyer
     "projects" : [
       {
         "year" : "2015",
@@ -91,8 +92,8 @@
                 "imageUrl" : "../img/tubehack.jpg",
                 "links" : [
                     {
-                        "name" : "Source(Pebble)",
-                        "url" : "https://github.com/Fertogo/MagicLED"
+                        "name" : "Pictures",
+                        "url" : "http://hackthetubes17.tumblr.com/post/45298164956/from-fernando-trujano-subject-fernando"
                     }
                 ]
 
@@ -132,7 +133,7 @@
                 "title" : "High School Site",
                 "description" : "I made this site as a portfolio to showcase my highschool work. The site uses jquery for animations and utilized the youtube API to dynamically update the total number of YouTube views. The site has since been archived.  ",
                 "languages" : ["JS","HTML", "CSS", "PHP"],
-                "imageUrl" : "#",
+                "imageUrl" : "../img/hs.png",
                 "links" : [
                     {
                         "name" : "Site",
@@ -161,9 +162,9 @@
         "entries": [
             {
                 "title" : "Massachusetts Institute of Technology",
-                "description" : "Courses taken: TODO",
+                "description" : "Relevant Coursework: \n6.046 - Design and Analysis of Algorithms \n6.004 - Computational Structures\n6.006 - Intro to algorithms\n6.005 - Elements of software constructions\n6.042 - Mathematics for Computer Sciencen\n6.01 - Intro to Electrical Engineerign and Computer Science",
                 "languages" : ["Class of 2017"],
-                "imageUrl" : "",
+                "imageUrl" : "../img/mit.png",
                 "links" : [
                     {
                         "name" : "Electrical Engineering and Computer Science",
@@ -179,36 +180,20 @@
         "entries": [
             {
                 "title" : "LinkedIn - Web Developer Intern",
-                "description" : "TODOTODO",
-                "languages" : ["a","b","TODO"],
-                "links" : [
-                    {
-                        "name" : "github",
-                        "url" : "http://github.com"
-                    },
-                    {
-                        "name" : "demo",
-                        "url" : "http://google.com"
-                    }
-
-                ]
-
+                "description" : "Current internship - more info coming soon!",
+                // "languages" : ["a","b","TODO"],
+                "imageUrl" : "../img/linkedin.png"
             },
             {
                 "title" : "Slide - Software Engineering Intern",
-                "description" : "TODOTODO",
-                "languages" : ["a","b","c", "asdfasdf"],
-                "imageUrl" : "",
+                "description" : "Focused on developing the web application core", //TODO
+                "languages" : ["React.js","Reflux","GSAP", "HTML", "CSS", "jQuery"],
+                "imageUrl" : "../img/slide.png",
                 "links" : [
                     {
-                        "name" : "github2",
-                        "url" : "http://github.com"
-                    },
-                    {
-                        "name" : "demo2",
-                        "url" : "http://google.com"
+                        "name" : "Company Site",
+                        "url" : "http://getslide.com"
                     }
-
                 ]
 
             },
@@ -218,36 +203,22 @@
         "year" : "2014",
         "entries": [
             {
-                "title" : "MediaLab UROP",
-                "description" : "TODOTODO",
-                "languages" : ["a","b","c", "asdfasdf"],
+                "title" : "MediaLab - Undergraduate Researcher",
+                "description" : "UROP in Changing Places group. Focused on LightByte, an interactive sun pixel display with over 400 individually controlled shutters\nMaintained the current LightByte system, expanded the Andorid application, and implemented server connections/real-time streaming features to support remote interactions through a web interface\nProduced websites, graphics and videos to showcase various research projects",
+                "languages" : ["Android","Java","WebRTC", "HTML", "CSS", "JS"],
+                "imageUrl" : "../img/medialab.png",
                 "links" : [
                     {
-                        "name" : "github2",
-                        "url" : "http://github.com"
-                    },
-                    {
-                        "name" : "demo2",
-                        "url" : "http://google.com"
+                        "name" : "More Info",
+                        "url" : "http://augmentingnature.com/"
                     }
-
                 ]
             },
             {
-                "title" : "MIT- 6.01 SLA",
-                "description" : "TODOTODO",
-                "languages" : ["a","b","c", "asdfasdf"],
-                "links" : [
-                    {
-                        "name" : "github2",
-                        "url" : "http://github.com"
-                    },
-                    {
-                        "name" : "demo2",
-                        "url" : "http://google.com"
-                    }
-
-                ]
+                "title" : "MIT- 6.01 Undergraduate Lab Assistant",
+                "description" : "Worked with staff/professors to prepare design labs for 6.01 - Intro to EECS\nAssisted students with basic OOP and algorithm concepts and helped debug circuits",
+                "languages" : ["Python"],
+                "imageUrl" : "../img/miteecs.png",
             }
         ]
       },
@@ -255,20 +226,12 @@
         "year" : "2012",
         "entries": [
             {
-                "title" : "Harvard Student Agencies",
-                "description" : "TODOTODO",
-                "languages" : ["a","b","c", "asdfasdf"],
-                "links" : [
-                    {
-                        "name" : "github2",
-                        "url" : "http://github.com"
-                    },
-                    {
-                        "name" : "demo2",
-                        "url" : "http://google.com"
-                    }
+                "title" : "Harvard Student Agencies - Web Developer Intern",
+                "description" : "Built and designed ”The Harvard Shop’s” custom order, request a quote and portfolio pages",
+                "imageUrl" : "../img/hsa.png",
 
-                ]
+                "languages" : ["Liquid","HTML","CSS", "jQuery"],
+
             }
         ]
       }

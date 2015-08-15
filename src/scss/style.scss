@@ -51,6 +51,7 @@ section > h2 {
   }
   #summary {
     padding-bottom: 10px;
+    max-width: 650px;
   }
   p,nav{
     text-align: center;
@@ -92,22 +93,26 @@ section > h2 {
 section {
   padding: 10px;
   padding-bottom: 50px;
-  #projects {
+  &#projects {
     background-color: #dcdcdc;
   }
-  #education {
+  &#education {
     /*background-color: #6ACCB1;*/
     // background-color: rgb(50, 114, 185);
     background-color: rgb(197, 199, 199);
   }
 
-  #work {
+  &#work {
     background-color: #dcdcdc;
   }
-  #contact {
+  &#contact {
     background-color: rgb(50, 114, 185);
     h2 {
       color: white;
+    }
+    p {
+      color:white;
+      text-align:center
     }
   }
 }
@@ -241,6 +246,7 @@ section {
     img {
       width: 395px;
       float: left;
+      margin-bottom: -3px;
     }
   }
 
