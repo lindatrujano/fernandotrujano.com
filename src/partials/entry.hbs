@@ -9,7 +9,11 @@
         </span>
         <span class="links">
           {{#each links}}
+            {{#if url}}
             <a href = "{{url}}">{{name}}</a>
+            {{else}}
+              {{name}}
+            {{/if}}
 
             {{#unless @last}}|{{/unless}}
 
@@ -19,9 +23,9 @@
       </div>
       <div class="row divider"></div>
       <div class="row">
-       <div class="project-description" style="white-space:pre-line"> {{description}}
+       <div class="project-description" style="white-space:pre-line"> {{{description}}}
        </div>
-        <img src="../img/customWorkoutTimer.png" />
+        <img src="{{imageUrl}}" alt="{{title}}" />
       </div>
 </div>
 

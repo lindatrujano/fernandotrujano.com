@@ -1,39 +1,61 @@
 {
     "summary" : "I am a stuff stuff",
 
+    //Asterisks
+    //HackMIT Collage
+    //HackMIT Puzzle
+    //Heartbeat
+    //Email annoyer
     "projects" : [
       {
         "year" : "2015",
         "entries": [
             {
                 "title" : "Custom Workout Timerr",
-                "description" : "This is an app that does this \n and that",
-                "languages" : ["a","b","c"],
+                "description" :
+                    "This Pebble app allows you to easily create custom interval timers (with names) for your workouts.The Pebble will time you and alert you when it's time to change moves based on your own workout program. Example: Plank for 2 minutes, pushups for 45 seconds... etc.\n The app consists of a Pebble side C code that request moves from the phone app (writen in JS). The online workout manager uses a combination of HTML/CSS, JS and Node.js to allow users to enter workouts from their phone or computer. \nThere are currently over 7000 people using this app in more than 120 countries around the world.",
+                "languages" : ["C","JS","HTML","CSS","Node.js"],
                 "links" : [
                     {
-                        "name" : "github",
-                        "url" : "http://github.com"
+                        "name" : "App Store",
+                        "url" : "https://apps.getpebble.com/applications/53b8f8d4c09b06bcc7000007"
                     },
                     {
-                        "name" : "demo",
-                        "url" : "http://google.com"
+                        "name" : "Source",
+                        "url" : "https://github.com/Fertogo/Pebble-workout-timer"
+                    }
+
+                ],
+                "imageUrl" : "../img/customWorkoutTimer.png"
+
+            },
+            {
+                "title" : "7Kreator",
+                "description" : "This application allows anyone to easily create images for the 7K Display in Simmons Hall.",
+                "languages" : ["JS","HTML","CSS"],
+                "imageUrl" : "../img/7K.png",
+                "links" : [
+                    {
+                        "name" : "Demo",
+                        "url" : "http://simmons-dev.mit.edu/7Kreator/"
+                    },
+                    {
+                        "name" : "Source",
+                        "url" : "https://github.com/Fertogo/7Kreator"
                     }
 
                 ]
 
             },
             {
-                "title" : "Custom Workout Timer2",
-                "description" : "This is an app that does this \n and asdfasdfthat",
-                "languages" : ["a","b","c", "asdfasdf"],
+                "title" : "VRtravel",
+                "description" : "Virtually immerse yourself in the beauties of the world without leaving your room. Enjoy a 360 degree virtual reality view of over 100 cities using Google Cardboard. Best Travel Hack at Hack@Brown 2015",
+                "languages" : ["Python", "JS","HTML","CSS"],
+                "imageUrl" : "../img/VRTravel.png",
                 "links" : [
                     {
-                        "name" : "github2",
-                        "url" : "http://github.com"
-                    },
-                    {
-                        "name" : "demo2",
-                        "url" : "http://google.com"
+                        "name" : "Source",
+                        "url" : "https://github.com/Fertogo/VRtravel"
                     }
 
                 ]
@@ -45,130 +67,120 @@
         "year" : "2014",
         "entries": [
             {
-                "title" : "asdfasdfCustom Workout Timerr",
-                "description" : "This is anasdfasdf app that does this \n and that",
-                "languages" : ["a","b","c"],
+                "title" : "Magic LEDs",
+                "description" : "Control over 600 leds in our room anywhere in the world, from your phone or smartwatch (Pebble).",
+                "languages" : ["Arduino" , "Android" , "C(Pebble SDK)" , "JS"],
+                "imageUrl" : "../img/magicLED.jpg",
                 "links" : [
                     {
-                        "name" : "gasdfithub",
-                        "url" : "http://github.com"
-                    },
-                    {
-                        "name" : "demo",
-                        "url" : "http://google.com"
+                        "name" : "Source(Pebble)",
+                        "url" : "https://github.com/Fertogo/MagicLED"
                     }
+                ]
 
+            },
+        ]
+      },
+      {
+        "year" : "2013",
+        "entries": [
+            {
+                "title" : "MIT TubeHack",
+                "description" : "MIT sends you their admissions letter in a cool silver tube, they also challenge you to hack it and do something cool with it. I made a POV (Persistence of Vision) display that can show different messages when you move it back and forth..",
+                "languages" : ["Arduino"],
+                "imageUrl" : "../img/tubehack.jpg",
+                "links" : [
+                    {
+                        "name" : "Source(Pebble)",
+                        "url" : "https://github.com/Fertogo/MagicLED"
+                    }
                 ]
 
             },
             {
-                "title" : "Custom Wasfadsforkout Timer2",
-                "description" : "This is asdfadsfan app that does this \n and asdfasdfthat",
-                "languages" : ["a","asdfasdfb","c", "asdfasdf"],
+                "title" : "AudioSyncR",
+                "description" : "AudioSyncR is an After Effects script for semi-automatic typography music video synching. I've created several typography music videos over the years. I really enjoy the animating part of the process but don't particularly enjoy creating hundereds of layers and individually syncing them to the song. AudioSyncR solves this issue. Users first go through the song and \"tap\" the beat. They then enter the lyrics through a song and the script will automatically create a new text layer for each word that starts at the correct point to the song. I also made the script compatible with another script, TypeMonkey. Using both of these, anyone can create a full typography music video in 20 minutes. I sold the exclusive hosting rights of the script to aetuts, so it is not open source or currently available.",
+                "languages" : ["Adobe ExtendScript","ScriptUI"],
+                "imageUrl" : "../img/aeScript.png",
                 "links" : [
                     {
-                        "name" : "githasdfasdfub2",
-                        "url" : "http://github.com"
-                    },
-                    {
-                        "name" : "deasdffmo2",
-                        "url" : "http://google.com"
+                        "name" : "Demo",
+                        "url" : "https://www.youtube.com/watch?v=fZEAa4a7wG0"
                     }
-
                 ]
 
             }
         ]
-      }
+      },
+      {
+        "year" : "2012",
+        "entries": [
+            {
+                "title" : "Underwater Robotics",
+                "description" : "In Junior year of highschool, 2 friends and I designed, built, programed, and tested our very own Remotely Operated Vehicle complete with a graphical control station and precise joystick controls. Our underwater robot used a combination of hardware and software to accomplish specific tasks such as sucking simulated oil, grabbing multiple objects, detecting metal, and measuring the length of a shipwreck. The robot itself used an arduino mega as its microprocessor and a control system coded by us in C#. We communicated with the arduino via UDP using a 50ft CAT 5e cable.",
+                "languages" : ["C#","Arduino"],
+                "imageUrl" : "../img/rov.jpg",
+                "links" : [
+                    {
+                        "name" : "Technical Report",
+                        "url" : "http://fernandotrujano.com/docs/CytrobyteITechnicalReport.pdf"
+                    }
+                ]
+
+            },
+            {
+                "title" : "High School Site",
+                "description" : "I made this site as a portfolio to showcase my highschool work. The site uses jquery for animations and utilized the youtube API to dynamically update the total number of YouTube views. The site has since been archived.  ",
+                "languages" : ["JS","HTML", "CSS", "PHP"],
+                "imageUrl" : "#",
+                "links" : [
+                    {
+                        "name" : "Site",
+                        "url" : "http://hs.fernandotrujano.com"
+                    }
+                ]
+            },
+            {
+                "title" : "Filmmaking and Motion graphics",
+                "description" : "My filmmaking work has earned two Remi Awards, reached the finals in national competitions and received exactly 201,136 (real time) views on YouTube",
+                "languages" : ["AfterEffects","Vegas", "Final Cut Pro", "Photoshop"],
+                "imageUrl" : "../img/film.jpg",
+                "links" : [
+                    {
+                        "name" : "Youtube",
+                        "url" : "https://youtube.com/fertogo"
+                    }
+                ]
+            },
+        ]
+      },
     ],
     "education" : [
       {
-        "year" : "2015",
+        "year" : "2013-2017",
         "entries": [
             {
-                "title" : "Custom Workout Timerr",
-                "description" : "This is an app that does this \n and that",
-                "languages" : ["a","b","c"],
+                "title" : "Massachusetts Institute of Technology",
+                "description" : "Courses taken: TODO",
+                "languages" : ["Class of 2017"],
+                "imageUrl" : "",
                 "links" : [
                     {
-                        "name" : "github",
-                        "url" : "http://github.com"
-                    },
-                    {
-                        "name" : "demo",
-                        "url" : "http://google.com"
+                        "name" : "Electrical Engineering and Computer Science",
                     }
-
                 ]
-
-            },
-            {
-                "title" : "Custom Workout Timer2",
-                "description" : "This is an app that does this \n and asdfasdfthat",
-                "languages" : ["a","b","c", "asdfasdf"],
-                "links" : [
-                    {
-                        "name" : "github2",
-                        "url" : "http://github.com"
-                    },
-                    {
-                        "name" : "demo2",
-                        "url" : "http://google.com"
-                    }
-
-                ]
-
             }
         ]
       },
-      {
-        "year" : "2014",
-        "entries": [
-            {
-                "title" : "asdfasdfCustom Workout Timerr",
-                "description" : "This is anasdfasdf app that does this \n and that",
-                "languages" : ["a","b","c"],
-                "links" : [
-                    {
-                        "name" : "gasdfithub",
-                        "url" : "http://github.com"
-                    },
-                    {
-                        "name" : "demo",
-                        "url" : "http://google.com"
-                    }
-
-                ]
-
-            },
-            {
-                "title" : "Custom Wasfadsforkout Timer2",
-                "description" : "This is asdfadsfan app that does this \n and asdfasdfthat",
-                "languages" : ["a","asdfasdfb","c", "asdfasdf"],
-                "links" : [
-                    {
-                        "name" : "githasdfasdfub2",
-                        "url" : "http://github.com"
-                    },
-                    {
-                        "name" : "deasdffmo2",
-                        "url" : "http://google.com"
-                    }
-
-                ]
-
-            }
-        ]
-      }
     ],
     "work" : [
       {
         "year" : "2015",
         "entries": [
             {
-                "title" : "Custom Workout Timerr",
-                "description" : "This is an app that does this \n and that",
-                "languages" : ["a","b","c"],
+                "title" : "LinkedIn - Web Developer Intern",
+                "description" : "TODOTODO",
+                "languages" : ["a","b","TODO"],
                 "links" : [
                     {
                         "name" : "github",
@@ -183,9 +195,10 @@
 
             },
             {
-                "title" : "Custom Workout Timer2",
-                "description" : "This is an app that does this \n and asdfasdfthat",
+                "title" : "Slide - Software Engineering Intern",
+                "description" : "TODOTODO",
                 "languages" : ["a","b","c", "asdfasdf"],
+                "imageUrl" : "",
                 "links" : [
                     {
                         "name" : "github2",
@@ -198,45 +211,64 @@
 
                 ]
 
-            }
+            },
         ]
       },
       {
         "year" : "2014",
         "entries": [
             {
-                "title" : "asdfasdfCustom Workout Timerr",
-                "description" : "This is anasdfasdf app that does this \n and that",
-                "languages" : ["a","b","c"],
+                "title" : "MediaLab UROP",
+                "description" : "TODOTODO",
+                "languages" : ["a","b","c", "asdfasdf"],
                 "links" : [
                     {
-                        "name" : "gasdfithub",
+                        "name" : "github2",
                         "url" : "http://github.com"
                     },
                     {
-                        "name" : "demo",
+                        "name" : "demo2",
                         "url" : "http://google.com"
                     }
 
                 ]
-
             },
             {
-                "title" : "Custom Wasfadsforkout Timer2",
-                "description" : "This is asdfadsfan app that does this \n and asdfasdfthat",
-                "languages" : ["a","asdfasdfb","c", "asdfasdf"],
+                "title" : "MIT- 6.01 SLA",
+                "description" : "TODOTODO",
+                "languages" : ["a","b","c", "asdfasdf"],
                 "links" : [
                     {
-                        "name" : "githasdfasdfub2",
+                        "name" : "github2",
                         "url" : "http://github.com"
                     },
                     {
-                        "name" : "deasdffmo2",
+                        "name" : "demo2",
                         "url" : "http://google.com"
                     }
 
                 ]
+            }
+        ]
+      },
+      {
+        "year" : "2012",
+        "entries": [
+            {
+                "title" : "Harvard Student Agencies",
+                "description" : "TODOTODO",
+                "languages" : ["a","b","c", "asdfasdf"],
+                "links" : [
+                    {
+                        "name" : "github2",
+                        "url" : "http://github.com"
+                    },
+                    {
+                        "name" : "demo2",
+                        "url" : "http://google.com"
+                    }
 
+                ]
             }
         ]
       }

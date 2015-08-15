@@ -13,8 +13,11 @@ section > h2 {
 }
 
 #main {
+  text-shadow: 1px 1px #111111;
   overflow: auto;
   height: 100vh;
+  min-height: 540px;
+  padding: 0;
   margin: 0;
   background: #1e5799; /* Old browsers */
   background: -moz-linear-gradient(top,  #1e5799 0%, #2989d8 100%, #207cca 100%, #7db9e8 100%, #207cca 100%);
@@ -23,10 +26,7 @@ section > h2 {
   background: -o-linear-gradient(top,  #1e5799 0%,#2989d8 100%,#207cca 100%,#7db9e8 100%,#207cca 100%);
   background: -ms-linear-gradient(top,  #1e5799 0%,#2989d8 100%,#207cca 100%,#7db9e8 100%,#207cca 100%);
   background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 100%,#207cca 100%,#7db9e8 100%,#207cca 100%);
-}
-
-#main {
-  margin-bottom: -70px;
+  margin-bottom: -50px;
 }
 
 #profile-pic {
@@ -90,6 +90,7 @@ section > h2 {
 
 #menu {
   height: 40px;
+  // height: 11vh;
   background-color: yellow;
   font-size: 0.9em;
   text-align: center;
@@ -220,7 +221,6 @@ h2 {
 }
 
 .project-description{
-
   width: initial;
   font-size: 1.2em;
   padding: 10px;

@@ -32,7 +32,7 @@ module.exports = function(grunt) {
                 dest: "build/index.html"
             }],
             templateData: 'src/data.json',
-            partials: ['src/partials/partials.hbs']
+            partials: ['src/partials/entry.hbs']
         }
     },
 
