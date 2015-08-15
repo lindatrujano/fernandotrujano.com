@@ -46,7 +46,7 @@ section > h2 {
 }
 
 #name {
-  font-weight: 300;
+  font-weight: 600;
   text-align: center;
   margin: 8px auto;
   color: white;
@@ -59,7 +59,7 @@ section > h2 {
   text-align: center;
   margin: 0 auto;
   color: white;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 1.0em;
 }
 
@@ -90,11 +90,10 @@ section > h2 {
 
 #menu {
   height: 40px;
-  // height: 11vh;
   background-color: yellow;
-  font-size: 0.9em;
+  font-size: 1.2em;
   text-align: center;
-  padding-top:15px;
+  padding-top:10px;
   color: white;
   background-color: rgba(8, 88, 177, 0.8);
 
