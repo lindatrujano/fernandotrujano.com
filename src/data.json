@@ -2,7 +2,6 @@
     "summary" : "I am a full stack engineer and a junior at MIT studying Computer Science and Electrical Engineering.",
 
     //Maybe
-        //Asterisks
         //HackMIT Collage
         //HackMIT Puzzle
         //Heartbeat
@@ -12,7 +11,26 @@
         "year" : "2015",
         "entries": [
             {
-                "title" : "Custom Workout Timerr",
+                "title" : "Asterisks",
+                "description" :
+                    "Asterisks allows you to lend your Internet accounts to friends without giving away your username or password. Maintain complete control over who can access your account and when, even allowing you to kick friends off your account when you'd like to use it yourself. \n Asterisks spawned from LinkedIn''s bay area intern hackathon, where our team took home 1st place.",
+                "languages" : ["Node.js","Express","HTML","CSS","PHP"],
+                "links" : [
+                    {
+                        "name" : "Homepage",
+                        "url" : "http://asterisks.io"
+                    },
+                    {
+                        "name" : "Chrome Store",
+                        "url" : "https://chrome.google.com/webstore/detail/asterisks/iapbcmhmbjclpbkjgiienpmbjpfcngbl"
+                    }
+
+                ],
+                "imageUrl" : "img/asterisks.png"
+
+            },
+            {
+                "title" : "Custom Workout Timer",
                 "description" :
                     "This Pebble app allows you to easily create custom interval timers (with names) for your workouts.The Pebble will time you and alert you when it's time to change moves based on your own workout program. Example: Plank for 2 minutes, pushups for 45 seconds... etc.\n The app consists of a Pebble side C code that request moves from the phone app (writen in JS). The online workout manager uses a combination of HTML/CSS, JS and Node.js to allow users to enter workouts from their phone or computer. \nThere are currently over 7000 people using this app in more than 120 countries around the world.",
                 "languages" : ["C","JS","HTML","CSS","Node.js"],
