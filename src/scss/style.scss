@@ -16,7 +16,7 @@ section > h2 {
   overflow: auto;
   height: 100vh;
   min-height: 540px;
-  padding: 0;
+  padding: 0 5px;
   margin: 0;
   background: #1e5799; /* Old browsers */
   background: -moz-linear-gradient(top,  #1e5799 0%, #2989d8 100%, #207cca 100%, #7db9e8 100%, #207cca 100%);
@@ -185,6 +185,8 @@ section {
   img {
     width: 100%;
     float: left;
+    margin-bottom: -3px;
+
   }
   .project-description{
     width: initial;
@@ -224,6 +226,19 @@ section {
   }
 
 }
+
+@media only screen and (min-width: 600px) {
+  .project {
+    .project-description {
+      width: calc(100% - 315px);
+      float: right;
+    }
+    img {
+      width: 295px;
+    }
+  }
+}
+
 @media only screen and (min-width: 750px) {
 
   #main {
@@ -246,7 +261,6 @@ section {
     img {
       width: 395px;
       float: left;
-      margin-bottom: -3px;
     }
   }
 
@@ -263,3 +277,5 @@ section {
     font-size: 1.5em;
   }
 }
+
+
