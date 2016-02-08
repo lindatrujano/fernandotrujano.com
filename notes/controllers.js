@@ -38,6 +38,22 @@ controller('notesController', function($scope) {
               "notes" : "6.006.pdf",
               "notesSize" : "8.1 MB"
             },
+            {
+              "name" : "Artificial Intelligence",
+              "number" : "6.034",
+              "id" : "6034",
+
+              "school":"MIT",
+              "schoolLink" : "http://mit.edu",
+              "professor" : "Patrick Winston",
+              "professorLink" : "http://people.csail.mit.edu/phw/",
+              "textbook" : "Winston Artificial Intelligence, Third Edition ",
+              "textbookLink" : "http://courses.csail.mit.edu/6.034f/ai3/rest.pdf",
+
+              "bgimg" : "6034.png",
+              "notes" : "6.034.pdf",
+              "notesSize" : "5.4 MB"
+            },
 
           ],
         },
