@@ -54,6 +54,22 @@ controller('notesController', function($scope) {
               "notes" : "6.034.pdf",
               "notesSize" : "5.4 MB"
             },
+            {
+              "name" : "Digital Communications",
+              "number" : "6.02",
+              "id" : "602",
+
+              "school":"MIT",
+              "schoolLink" : "http://mit.edu",
+              "professor" : "Katrina LaCurts",
+              "professorLink" : "http://people.csail.mit.edu/katrina/",
+              "textbook" : "6.02 Lecture Notes",
+              "textbookLink" : "https://visor.mit.edu/cat-soop/index.py/__STATIC__/f2015/handouts/Chapter01.pdf",
+
+              "bgimg" : "602.png",
+              "notes" : "6.02.pdf",
+              "notesSize" : "5.4 MB"
+            }
 
           ],
         },
