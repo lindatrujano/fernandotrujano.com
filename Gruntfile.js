@@ -80,6 +80,20 @@ module.exports = function(grunt) {
           'build/style.css': ['build/style.css']
         }
       }
+    },
+
+    imagemin: {
+       dist: {
+          options: {
+            optimizationLevel: 5
+          },
+          files: [{
+             expand: true,
+             cwd: 'img',
+             src: ['**/*.{png,jpg,gif}'],
+             dest: 'build/img'
+          }]
+       }
     }
 
   });
@@ -91,8 +105,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
 
   grunt.registerTask('default', ['concat', 'copy', 'sass','compile-handlebars', 'watch']);
-  grunt.registerTask('build', ['concat','copy', 'uglify', 'sass', 'cssmin', 'compile-handlebars']);
+  grunt.registerTask('build', ['concat', 'uglify', 'sass', 'cssmin', 'compile-handlebars','imagemin']);
 
 };
