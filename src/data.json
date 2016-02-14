@@ -14,7 +14,7 @@
                 "title" : "Rox Star",
                 "description" : "Rox Star is a virtual reality karaoke experience with an immersive, reactive environment and professional vocal effects. Built with Unity and Reaper, this software leverages technologies such as virtual reality, motion tracking, and computer graphics to bring karaoke into this century! Winner of best Microsoft price at Hack@Brown 2016",
                 "languages" : ["Unity","C#"],
-                "imageUrl" : "img/roxstar.png",
+                "imageUrl" : "img/roxstar.jpg",
                 "links" : [
                     {
                         "name" : "Site",
@@ -68,7 +68,7 @@
                     }
 
                 ],
-                "imageUrl" : "img/customWorkoutTimer.png"
+                "imageUrl" : "img/customWorkoutTimer.jpg"
 
             },
             {
@@ -93,7 +93,7 @@
                 "title" : "VRtravel",
                 "description" : "Virtually immerse yourself in the beauties of the world without leaving your room. Enjoy a 360 degree virtual reality view of over 100 cities using Google Cardboard. Best Travel Hack at Hack@Brown 2015",
                 "languages" : ["Python", "JS","HTML","CSS"],
-                "imageUrl" : "img/VRTravel.png",
+                "imageUrl" : "img/VRTravel.jpg",
                 "links" : [
                     {
                         "name" : "Source",
@@ -143,7 +143,7 @@
                 "title" : "AudioSyncR",
                 "description" : "AudioSyncR is an After Effects script for semi-automatic typography music video synching. I've created several typography music videos over the years. I really enjoy the animating part of the process but don't particularly enjoy creating hundereds of layers and individually syncing them to the song. AudioSyncR solves this issue. Users first go through the song and \"tap\" the beat. They then enter the lyrics through a song and the script will automatically create a new text layer for each word that starts at the correct point to the song. I also made the script compatible with another script, TypeMonkey. Using both of these, anyone can create a full typography music video in 20 minutes. I sold the exclusive hosting rights of the script to aetuts, so it is not open source or currently available.",
                 "languages" : ["Adobe ExtendScript","ScriptUI"],
-                "imageUrl" : "img/aeScript.png",
+                "imageUrl" : "img/aeScript.jpg",
                 "links" : [
                     {
                         "name" : "Demo",
@@ -174,7 +174,7 @@
                 "title" : "High School Site",
                 "description" : "I made this site as a portfolio to showcase my highschool work. The site uses jquery for animations and utilized the youtube API to dynamically update the total number of YouTube views. The site has since been archived.  ",
                 "languages" : ["JS","HTML", "CSS", "PHP"],
-                "imageUrl" : "img/hs.png",
+                "imageUrl" : "img/hs.jpg",
                 "links" : [
                     {
                         "name" : "Site",
