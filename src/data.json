@@ -8,6 +8,29 @@
         //Email annoyer
     "projects" : [
       {
+        "year" : "2016",
+        "entries" : [
+            {
+                "title" : "Rox Star",
+                "description" : "Rox Star is a virtual reality karaoke experience with an immersive, reactive environment and professional vocal effects. Built with Unity and Reaper, this software leverages technologies such as virtual reality, motion tracking, and computer graphics to bring karaoke into this century! Winner of best Microsoft price at Hack@Brown 2016",
+                "languages" : ["Unity","C#"],
+                "imageUrl" : "img/roxstar.png",
+                "links" : [
+                    {
+                        "name" : "Site",
+                        "url" : "http://devpost.com/software/rox-star"
+                    },
+                    {
+                        "name" : "Demo",
+                        "url" : "https://channel9.msdn.com/Blogs/raw-tech/Hackathon-Projects-from-Brown-University-Recap#time=09m37s"
+                    }
+                ]
+
+            }
+        ]
+
+      },
+      {
         "year" : "2015",
         "entries": [
             {
@@ -32,7 +55,7 @@
             {
                 "title" : "Custom Workout Timer",
                 "description" :
-                    "This Pebble app allows you to easily create custom interval timers (with names) for your workouts.The Pebble will time you and alert you when it's time to change moves based on your own workout program. Example: Plank for 2 minutes, pushups for 45 seconds... etc.\n The app consists of a Pebble side C code that request moves from the phone app (writen in JS). The online workout manager uses a combination of HTML/CSS, JS and Node.js to allow users to enter workouts from their phone or computer. \nThere are currently over 7000 people using this app in more than 120 countries around the world.",
+                    "This Pebble app allows you to easily create custom interval timers (with names) for your workouts.The Pebble will time you and alert you when it's time to change moves based on your own workout program. Example: Plank for 2 minutes, pushups for 45 seconds... etc.\n The app consists of a Pebble side C code that request moves from the phone app (writen in JS). The online workout manager uses a combination of HTML/CSS, JS and Node.js to allow users to enter workouts from their phone or computer. \nThere are currently over 10,000 people using this app in more than 140 countries around the world.",
                 "languages" : ["C","JS","HTML","CSS","Node.js"],
                 "links" : [
                     {
@@ -161,7 +184,7 @@
             },
             {
                 "title" : "Filmmaking and Motion graphics",
-                "description" : "My filmmaking work has earned two Remi Awards, reached the finals in national competitions and received exactly 201,136 (real time) views on YouTube",
+                "description" : "My filmmaking work has earned two Remi Awards, reached the finals in national competitions and received over 200,000 views on YouTube",
                 "languages" : ["AfterEffects","Vegas", "Final Cut Pro", "Photoshop"],
                 "imageUrl" : "img/film.jpg",
                 "links" : [
@@ -180,7 +203,7 @@
         "entries": [
             {
                 "title" : "Massachusetts Institute of Technology",
-                "description" : "Relevant Coursework: \n6.046 - Design and Analysis of Algorithms \n6.004 - Computational Structures\n6.006 - Intro to algorithms\n6.005 - Elements of software constructions\n6.042 - Mathematics for Computer Sciencen\n6.01 - Intro to Electrical Engineerign and Computer Science",
+                "description" : "Relevant Coursework: \n6.857 - Computer and Network Security \n6.033 - Computer Systems Engineering \n6.813 - UI Design and Implementation \n6.170 - Software studio \n6.034 - Artificial Intelligence \n6.046 - Design and Analysis of Algorithms \n6.004 - Computational Structures\n6.006 - Intro to algorithms\n6.005 - Elements of software construction\n6.042 - Mathematics for Computer Science\n6.02   - Digital Communications\n6.01 - Intro to Electrical Engineering and Computer Science",
                 "languages" : ["Class of 2017"],
                 "imageUrl" : "img/mit.png",
                 "links" : [
@@ -194,17 +217,28 @@
     ],
     "work" : [
       {
+        "year" : "2016",
+        "entries": [
+            {
+                "title" : "Software Engineering Intern",
+                "description" : "Worked with the mobile team to develop a second screen interactive experience for Disneyland''s 60th aniversary special.",
+                "languages" : ["C++","Cocos2dx","Android","Java"],
+                "imageUrl" : "img/disney.png"
+            }
+        ]
+      },
+      {
         "year" : "2015",
         "entries": [
             {
                 "title" : "LinkedIn - Web Developer Intern",
-                "description" : "Current internship - more info coming soon!",
+                "description" : "more info coming soon!",
                 // "languages" : ["a","b","TODO"],
                 "imageUrl" : "img/linkedin.png"
             },
             {
                 "title" : "Slide - Software Engineering Intern",
-                "description" : "Focused on developing the web application core", //TODO
+                "description" : "Focused on developing the web application core.", //TODO
                 "languages" : ["React.js","Reflux","GSAP", "HTML", "CSS", "jQuery"],
                 "imageUrl" : "img/slide.png",
                 "links" : [
