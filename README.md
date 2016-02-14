@@ -5,5 +5,5 @@ To build:
 ```
 bower install
 npm install
-grunt
+grunt build
 ```
