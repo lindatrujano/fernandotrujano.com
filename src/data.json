@@ -12,7 +12,7 @@
         "entries" : [
             {
                 "title" : "Rox Star",
-                "description" : "Rox Star is a virtual reality karaoke experience with an immersive, reactive environment and professional vocal effects. Built with Unity and Reaper, this software leverages technologies such as virtual reality, motion tracking, and computer graphics to bring karaoke into this century! Winner of best Microsoft price at Hack@Brown 2016",
+                "description" : "Rox Star is a virtual reality karaoke experience with an immersive, reactive environment and professional vocal effects. Built with Unity and Reaper, this software leverages technologies such as virtual reality, motion tracking, and computer graphics to bring karaoke into this century! Winner of best Microsoft project at Hack@Brown 2016.",
                 "languages" : ["Unity","C#"],
                 "imageUrl" : "img/roxstar.jpg",
                 "links" : [

@@ -37,9 +37,12 @@ module.exports = function(grunt) {
     },
 
     copy: {
+        js: {
+            src:"build/main.js",
+            dest:"build/main.min.js" //Just copy file, don't uglify
+        },
         main: {
             files : [
-              {expand: true, src: ["build/main.js"], dest: "main.min.js"},//Just copy file, don't uglify
               {expand: true, src: ['img/**'], dest: 'build/'},
             ]
         }
@@ -107,7 +110,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
 
-  grunt.registerTask('default', ['concat', 'copy', 'sass','compile-handlebars', 'watch']);
+  grunt.registerTask('default', ['concat', 'copy','copy:js', 'sass','compile-handlebars', 'watch']);
   grunt.registerTask('build', ['concat', 'uglify', 'sass', 'cssmin', 'compile-handlebars','imagemin']);
 
 };
