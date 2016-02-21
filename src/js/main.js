@@ -19,13 +19,15 @@ $(document).ready(function(){
       }
     }
   })
-
   $('#menu > a').click(function(e){
+    console.log("Menu click")
     e.preventDefault()
     var section = $(this).attr('href'),
-        newPos  = $(section).offset().top
+        newPos  = $(section).offset().top;
 
-    $('body').animate({
+    console.log(newPos);
+
+    $('body,html').animate({
       'scrollTop' : newPos - 45 + "px"
     }, 700)
 
