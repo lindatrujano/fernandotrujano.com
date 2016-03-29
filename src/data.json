@@ -221,9 +221,15 @@
         "entries": [
             {
                 "title" : "Software Engineering Intern",
-                "description" : "Worked with the mobile team to develop a second screen interactive experience for Disneyland''s 60th aniversary special.",
+                "description" : "Worked with the mobile team to develop a second screen interactive experience for Disneyland''s 60th aniversary special. The app uses Walt Disney Imagineering’s Made with Magic technology to deliver a second screen, interactive experience that syncs directly to the musical segments and brings colorful light shows and original content right to your mobile phone.",
                 "languages" : ["C++","Cocos2dx","Android","Java"],
-                "imageUrl" : "img/disney.png"
+                "imageUrl" : "img/disney.png",
+                "links" : [
+                    {
+                        "name" : "Blog post",
+                        "url"  : "https://disneyparks.disney.go.com/blog/2016/02/join-the-celebration-online-during-abcs-the-wonderful-world-of-disney-disneyland-60-on-february-21/"
+                    }
+                ]
             }
         ]
       },
@@ -232,13 +238,13 @@
         "entries": [
             {
                 "title" : "LinkedIn - Web Developer Intern",
-                "description" : "more info coming soon!",
-                // "languages" : ["a","b","TODO"],
+                "description" : "Worked on a new front facing product as part of the growth team using Play/Java, Javascript and HTML/CSS. Developed elegant and effcient code on a large codebase for 380M+ users",
+                "languages" : ["Play","Java","HTML/CSS","Dust","Javascript"],
                 "imageUrl" : "img/linkedin.png"
             },
             {
                 "title" : "Slide - Software Engineering Intern",
-                "description" : "Focused on developing the web application core.", //TODO
+                "description" : "Focused on developing the web application core. Implemented an advanced card parser and main account pages complete with smooth transition animations for optimal user experience. ",
                 "languages" : ["React.js","Reflux","GSAP", "HTML", "CSS", "jQuery"],
                 "imageUrl" : "img/slide.png",
                 "links" : [
