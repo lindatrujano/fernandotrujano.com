@@ -97,6 +97,12 @@ module.exports = function(grunt) {
              dest: 'build/img'
           }]
        }
+    },
+    'gh-pages': {
+      options: {
+        base: 'build'
+      },
+      src: ['**']
     }
 
   });
@@ -109,8 +115,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-gh-pages');
 
   grunt.registerTask('default', ['concat', 'copy','copy:js', 'sass','compile-handlebars', 'watch']);
-  grunt.registerTask('build', ['concat', 'uglify', 'sass', 'cssmin', 'compile-handlebars','imagemin']);
+  grunt.registerTask('deploy', ['concat', 'uglify', 'sass', 'cssmin', 'compile-handlebars','imagemin', 'gh-pages']);
 
 };
