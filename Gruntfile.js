@@ -45,6 +45,11 @@ module.exports = function(grunt) {
             files : [
               {expand: true, src: ['img/**'], dest: 'build/'},
             ]
+        },
+        notes : {
+          files : [
+            {expand: true, src: ['notes/**'], dest: 'build/'},
+          ]
         }
     },
 
@@ -118,6 +123,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-gh-pages');
 
   grunt.registerTask('default', ['concat', 'copy','copy:js', 'sass','compile-handlebars', 'watch']);
-  grunt.registerTask('deploy', ['concat', 'uglify', 'sass', 'cssmin', 'compile-handlebars','imagemin', 'gh-pages']);
-
+  grunt.registerTask('deploy', ['concat', 'uglify', 'sass', 'cssmin', 'compile-handlebars','imagemin','copy:notes', 'gh-pages']);
 };
