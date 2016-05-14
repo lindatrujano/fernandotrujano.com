@@ -7,6 +7,22 @@ controller('notesController', function($scope) {
           "id" : "cs",
           "courses" : [
             {
+              "name" : "Computer and Network Security",
+              "number" : "6.857",
+              "id" : "6857",
+
+              "school":"MIT",
+              "schoolLink" : "http://mit.edu",
+              "professor" : "Ron Rivest",
+              "professorLink" : "http://people.csail.mit.edu/rivest/",
+              "textbook" : "Jonathan Katz, Yehuda Lindell Introduction to Modern Cryptography. 2007",
+              "textbookLink" : "https://www.u-cursos.cl/usuario/777719ab2ddbbdb16d99df29431d3036/mi_blog/r/1_book-introduction_to_modern_cryptography.pdf",
+
+              "bgimg" : "6857.png",
+              "notes" : "6.857.pdf",
+              "notesSize" : "23.3 MB"
+            },
+            {
               "name" : "Design and Analysis of Algorithms",
               "number" : "6.046",
               "id" : "6046",
