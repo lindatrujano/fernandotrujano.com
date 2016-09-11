@@ -1,9 +1,9 @@
 {
-    "summary" : "I am a full stack engineer and a junior at MIT studying Computer Science and Electrical Engineering.",
+    "summary" : "I am a full stack engineer and a senior at MIT studying Computer Science and Electrical Engineering.",
 
     //Maybe
-        //HackMIT Collage
-        //HackMIT Puzzle
+        //Zoid
+        //HackMIT Puzzles
         //Heartbeat
         //Email annoyer
     "projects" : [
@@ -224,7 +224,24 @@
         "year" : "2016",
         "entries": [
             {
-                "title" : "Software Engineering Intern",
+                "title" : "Synack - Software Engineering Intern",
+                "description" : "Developed tools for automatic detection of common web vulnerabilites as part of the KPCB Fellowship program.",
+                "languages" : ["Go","Javascript"],
+                "imageUrl" : "img/synack.png",
+                "links" : [
+                    {
+                        "name" : "Company Site",
+                        "url"  : "http://synack.com/"
+                    }
+                ]
+            }
+        ]
+      },
+      {
+        "year" : "2016",
+        "entries": [
+            {
+                "title" : "Disney - Software Engineering Intern",
                 "description" : "Worked with the mobile team to develop a second screen interactive experience for Disneyland''s 60th aniversary special. The app uses Walt Disney Imagineering’s Made with Magic technology to deliver a second screen, interactive experience that syncs directly to the musical segments and brings colorful light shows and original content right to your mobile phone.",
                 "languages" : ["C++","Cocos2dx","Android","Java"],
                 "imageUrl" : "img/disney.png",
