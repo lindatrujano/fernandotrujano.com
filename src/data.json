@@ -11,6 +11,19 @@
         "year" : "2016",
         "entries" : [
             {
+                "title" : "Security Analysis of DJI Phantom 3 Standard",
+                "description" : "In this paper, we present a collection of fatal attacks, minor observations, and associated security vulnerabilities, discovered over the course of a month of research. These vulnerabilities affect both the physical integrity of the drone and the security of user data. Finally, we make a set of recommendations that, if implemented, will dramatically bolster the security of the drone.",
+                "languages" : ["Security", "Pen Testing"],
+                "imageUrl" : "img/dji.png",
+                "links" : [
+                    {
+                        "name" : "Paper",
+                        "url" : "https://courses.csail.mit.edu/6.857/2016/files/9.pdf"
+                    },
+                ]
+
+            },
+            {
                 "title" : "Rox Star",
                 "description" : "Rox Star is a virtual reality karaoke experience with an immersive, reactive environment and professional vocal effects. Built with Unity and Reaper, this software leverages technologies such as virtual reality, motion tracking, and computer graphics to bring karaoke into this century! Winner of best Microsoft project at Hack@Brown 2016.",
                 "languages" : ["Unity","C#"],
@@ -207,7 +220,7 @@
         "entries": [
             {
                 "title" : "Massachusetts Institute of Technology",
-                "description" : "Relevant Coursework: \n6.857 - Computer and Network Security \n6.033 - Computer Systems Engineering \n6.813 - UI Design and Implementation \n6.170 - Software studio \n6.034 - Artificial Intelligence \n6.046 - Design and Analysis of Algorithms \n6.004 - Computational Structures\n6.006 - Intro to algorithms\n6.005 - Elements of software construction\n6.042 - Mathematics for Computer Science\n6.02   - Digital Communications\n6.01 - Intro to Electrical Engineering and Computer Science",
+                "description" : "Relevant Coursework: \n6.857 - Computer and Network Security \n6.033 - Computer Systems Engineering \n6.828 - Operating Systems Engineering  \n6.813 - UI Design and Implementation \n6.170 - Software studio \n6.034 - Artificial Intelligence \n6.046 - Design and Analysis of Algorithms \n6.004 - Computational Structures\n6.006 - Intro to algorithms\n6.005 - Elements of software construction \n6.002 - Circuits and Electronics \n6.041 - Probability \n6.042 - Mathematics for Computer Science\n6.02   - Digital Communications\n6.01 - Intro to Electrical Engineering and Computer Science",
                 "languages" : ["Class of 2017"],
                 "imageUrl" : "img/mit.png",
                 "links" : [
