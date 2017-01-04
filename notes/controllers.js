@@ -85,6 +85,22 @@ controller('notesController', function($scope) {
               "bgimg" : "602.png",
               "notes" : "6.02.pdf",
               "notesSize" : "5.4 MB"
+            },
+            {
+              "name" : "Circuits and Electronics",
+              "number" : "6.002",
+              "id" : "6002",
+
+              "school":"MIT | EdX",
+              "schoolLink" : "https://courses.edx.org/courses/course-v1:MITx+6.002x_6x+1T2015/info",
+              "professor" : "Anant Agrawal",
+              "professorLink" : "https://people.csail.mit.edu/agarwal/",
+              "textbook" : "Foundations of Analog and Digital Electronic Circuits",
+              "textbookLink" : "https://edx.vitalsource.com/#/books/9781558607354/cfi/0!/recent",
+
+              "bgimg" : "6002.png",
+              "notes" : "6.002.pdf",
+              "notesSize" : "25.0 MB"
             }
 
           ],
@@ -95,6 +111,22 @@ controller('notesController', function($scope) {
           "id" : "math",
 
           "courses" : [
+            {
+              "name" : "Intro to Probability",
+              "number" : "6.041",
+              "id" : "6041",
+
+              "school":"MIT",
+              "schoolLink" : "http://mit.edu/",
+              "professor" : "John N. Tsitsiklis",
+              "professorLink" : "http://www.mit.edu/~jnt/home.html",
+              "textbook" : "Dimitri P. Bertsekas, John N. Tsitsiklis,“Introduction to Probability”, 2nd edition, Athena Scientific",
+              "textbookLink" : "http://www.mit.edu/~dimitrib/probbook.html",
+
+              "bgimg" : "6041.png",
+              "notes" : "6.041.pdf",
+              "notesSize" : "29.7 MB"
+            },
             {
               "name" : "Mathematics for Computer Science",
               "number" : "6.042",
