@@ -1,10 +1,10 @@
-<!-- 
-Hello source code viewer. You're probably here wondering how this site works so let me explain a bit. This website is heavily dependent on javascript, more specifically jquery. Basically, the whole site is one page, made up of several divs that are shown according to the javascript. It uses shadowbox to display video and images so special thanks to Michael J. I. Jackson. The site also uses php and Youtube's API in ordder to get my total channel views. Please excuse my sloppy coding at times, namely the use of &nbsp rather than css margins/padding. If you find any bugs, please point them out to me.  Please feel free to contact me if you have any further questions about this site. 
+<!--
+Hello source code viewer. You're probably here wondering how this site works so let me explain a bit. This website is heavily dependent on javascript, more specifically jquery. Basically, the whole site is one page, made up of several divs that are shown according to the javascript. It uses shadowbox to display video and images so special thanks to Michael J. I. Jackson. The site also uses php and Youtube's API in ordder to get my total channel views. Please excuse my sloppy coding at times, namely the use of &nbsp rather than css margins/padding. If you find any bugs, please point them out to me.  Please feel free to contact me if you have any further questions about this site.
 -Fernando Trujano
 trujano.fernando@gmail.com
 407-754-8527
 -->
-<?php error_reporting(E_ALL) ?> 
+<?php error_reporting(E_ALL) ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -22,10 +22,10 @@ trujano.fernando@gmail.com
 <script type="text/javascript" src="js/animate.js"></script>
 <script type="text/javascript" src="js/shadowbox/shadowbox.js"></script>
 <script type="text/javascript">
-Shadowbox.init({ 
-    onOpen: function() { 
-        $('#sb-title').after($('#sb-info')); 
-    } 
+Shadowbox.init({
+    onOpen: function() {
+        $('#sb-title').after($('#sb-info'));
+    }
 });
 </script>
 
@@ -43,38 +43,38 @@ Shadowbox.init({
 
 </script>
 
-<link rel="icon" 
+<link rel="icon"
       href="images/favicon2.png">
 </head>
 
 <body>
 <div id="wrap">
   <div id="content">
- 
-  
-  <div id ="alert" style ="font-size: 105%; "> Hi, this website was last updated in August 2013. You should read everything here as if I were still a senior in high school. For archiving purpuses, this site has been moved to hs.fernandotrujano.com. <a href="http://fernandotrujano.com">Click here </a>  to go to my new site. <a href="#" id="close">close</a> </div>
-  
 
-  
+
+  <div id ="alert" style ="font-size: 105%; "> Hi, this website was last updated in August 2013. You should read everything here as if I were still a senior in high school. For archiving purpuses, this site has been moved to hs.fernandotrujano.com. <a href="http://fernandotrujano.com">Click here </a>  to go to my new site. <a href="#" id="close">close</a> </div>
+
+
+
  <script>
-  $('#close').click( function() { 
- $("#alert").animate({ 
+  $('#close').click( function() {
+ $("#alert").animate({
     'padding-top' : 0,
     'padding-right' : 0,
     'padding-bottom' : 0,
     'padding-left' : 0,
-	'margin' :0, 
+	'margin' :0,
 	'opacity': 0,
-	'border-width': 0, 
-	'height': 0, <!-- Fixed everyting --> 
-		
-  }, "slow"); 
-    <!--  $('#alert').slideUp('slow'); --> 
-  }); 
-  </script> 
+	'border-width': 0,
+	'height': 0, <!-- Fixed everyting -->
 
-  
-  <!-- End Alert --> 
+  }, "slow");
+    <!--  $('#alert').slideUp('slow'); -->
+  });
+  </script>
+
+
+  <!-- End Alert -->
     <h1 class="logo">Fernando Trujano</h1>
     <ul id="nav">
       <li><a href="#about">About</a></li>
@@ -92,37 +92,37 @@ Shadowbox.init({
         <h2>Welcome to my Site </h2>
         <img src="images/aboutme2.png" alt="Image" width="287" height="332" class="border alignright" />
         <p>I am a rising freshman at <a href="http://web.mit.edu/">MIT</a> who is passionate about computers and technology. I am also an enthusiastic programmer, filmmaker, motion graphics artist, musician and tennis player. </p>
-        <p>My filmmaking work has earned two Remi Awards, reached the finals in national competitions and received exactly <strong> 
+        <p>My filmmaking work has earned two Remi Awards, reached the finals in national competitions and received exactly <strong>
           <!-- Get total Channel Views for Fertogo -->
           201,136
           <!-- PHP is disable on this server :(
           <?php
 
           /*
-                require_once 'Zend/Loader.php'; 
+                require_once 'Zend/Loader.php';
                 Zend_Loader::loadClass('Zend_Gdata_YouTube');
-                  
+
                   $yt = new Zend_Gdata_YouTube();
                   $yt->setMajorProtocolVersion(2);
                   printTotalViews($yt->getuserUploads('fertogo'));
-                
+
                 function printTotalViews($videoFeed)
                 {
-                  $privateViews = 12946; 
-                  $total = $privateViews; 
-                  
+                  $privateViews = 12946;
+                  $total = $privateViews;
+
                   foreach ($videoFeed as $videoEntry) {
-                    $total += $videoEntry->getVideoViewCount();   
+                    $total += $videoEntry->getVideoViewCount();
                   }
-                  $total_format = number_format($total); 
-                  echo $total_format. " "; 
+                  $total_format = number_format($total);
+                  echo $total_format. " ";
                 }
                 */
-          ?>  --> 
-          <!-- /Get total Channel Views for Fertogo --> 
+          ?>  -->
+          <!-- /Get total Channel Views for Fertogo -->
           </strong> <a href="images/ytapi.jpg" rel="lightbox">(real time)</a> views on <a href="http://www.youtube.com/fertogo/" target="_blank">YouTube</a>. In addition, I've advanced to the state level in BPA's C++ division. During high school I've worked on a myriad of projects ranging from a short <a rel="shadowbox; height=720; width=1280; player=swf" href="http://youtube.googleapis.com/v/Ixf1NzrwavA&hl=en&fs=1&rel=0&autoplay=1">public service announcement</a> to a fully functional <a target="	" href="http://www.cytrobyte.com">underwater ROV.</a></p>
         <p> I was born in Mexico City  in 1994 and moved to the States in 2006. My creativity has been enriched by knowledge of both cultures. </p>
-        <p>This summer I attended a one week engineering enrichment program (<a href="http://www.engr.utexas.edu/eoe/precollege/mite" target="_blank" >MITE</a>) at the University of Texas, followed by a one week Underwater Robotics camp (STEMSI) at <a href="http://www.tamucc.edu/" target="_blank">TAMUCC</a>. My summer concluded with an unforgettable seven weeks at Harvard University taking Computer Science and Expository Writing. </p>
+        <p>This summer I attended a one week engineering enrichment program (<a href="http://www.engr.utexas.edu/eoe/recruitment/mite" target="_blank" >MITE</a>) at the University of Texas, followed by a one week Underwater Robotics camp (STEMSI) at <a href="http://www.tamucc.edu/" target="_blank">TAMUCC</a>. My summer concluded with an unforgettable seven weeks at Harvard University taking Computer Science and Expository Writing. </p>
         <p>&nbsp;</p>
         <div style="float:right; width:250px;">
           <h3>&nbsp; My Strategy</h3>
@@ -147,7 +147,7 @@ Shadowbox.init({
         </div>
       </div>
       <!--/#about-->
-      
+
       <div id="education" class="section">
         <h2>Education</h2>
         <ul id="portitems">
@@ -155,8 +155,8 @@ Shadowbox.init({
           <li><a href="#guthrie">Guthrie Center</a></li>
           <li><a href="#ssp">Harvard Summer School</a></li>
         </ul>
-        <div id="stratford" class="item"> 
-          <!-- 
+        <div id="stratford" class="item">
+          <!--
                     <a href="images/itemopen.png" rel="lightbox"><img src="images/mainitem.jpg" alt="Item 1 Main" /></a>
                     <a href="images/itemopen.png" rel="lightbox"><img src="images/smallitem.jpg" alt="Item 1 Small" width="135" class="smallitem" /></a>
                     <a href="images/itemopen.png" rel="lightbox"><img class="smallitem" src="images/smallitem.jpg" alt="Item 1 Small" /></a>
@@ -170,25 +170,25 @@ Shadowbox.init({
             <p> Eventhough Stratford lacks an AP Computer Science class, or any technologically advanced classes for that matter, I have been able to use and expand my knowledge with ASE's different projects. Our <a rel="shadowbox; height=720; width=1280; player=swf" href="http://youtube.googleapis.com/v/TJ6v8Wjs-FA&hl=en&fs=1&rel=0&autoplay=1">Rube Goldberg Machine</a> for example, began with a custom android app programmed to call a number when the phone's orientation changed (this would cause another phone to vibrate and activate the next step of the machine). These short activities exposed us to the engineering way of thinking and reinforced the value of teamwork and equal cooperation between each member.</p>
             <p> The best thing about ASE is that it continues onto senior year where we get to work  on any project of our choosing. To learn about our senior project, you can visit our site at <a target="	" href="http://www.cytrobyte.com">Cytrobyte.com</a>. </p>
             <p>&nbsp;</p>
-           
+
             <h4> Senior Classes </h4>
-            
+
             <div style="float:right; width:250px;">
               <ul>
                <li>Advanced Digital Filmmaking</li>
               	<li>Honors Band </li>
-                <li>Tennis</li>               
+                <li>Tennis</li>
               </ul>
             </div>
-            
+
             <div style="float:right; width:270px; ">
               <ul>
                 <li>AP Economics</li>
                 <li>AP Government</li>
-                <li>Senior Research Project </li>  
-              </ul>    
+                <li>Senior Research Project </li>
+              </ul>
             </div>
-            
+
             <div style="width:270px; ">
               <ul>
               <li>AP Calculus BC</li>
@@ -196,13 +196,13 @@ Shadowbox.init({
                 <li>AP English IV</li>
               </ul>
             </div>
-  
+
             <p> <p><a href="http://cms.springbranchisd.com/LinkClick.aspx?fileticket=dsdarLtFl18%3d&amp;tabid=15593" target="_blank">Stratford High School Profile</a></p></p>
-          </div>   
+          </div>
         </div>
-        
-        <div id="guthrie" class="item"> 
-          <!-- 
+
+        <div id="guthrie" class="item">
+          <!--
                     <a href="images/itemopen.png" rel="lightbox"><img src="images/mainitem.jpg" alt="Item 2 Main" /></a>
                     <a href="images/itemopen.png" rel="lightbox"><img class="smallitem" src="images/smallitem.jpg" alt="Item 2 Small" /></a>
                     <a href="images/itemopen.png" rel="lightbox"><img class="smallitem" src="images/smallitem.jpg" alt="Item 2 Small" /></a>
@@ -222,8 +222,8 @@ Shadowbox.init({
             </ul>
           </div>
         </div>
-        <div id="ssp" class="item"> 
-          <!-- 
+        <div id="ssp" class="item">
+          <!--
                     <a href="images/itemopen.png" rel="lightbox"><img src="images/mainitem.jpg" alt="Item 2 Main" /></a>
                     <a href="images/itemopen.png" rel="lightbox"><img class="smallitem" src="images/smallitem.jpg" alt="Item 2 Small" /></a>
                     <a href="images/itemopen.png" rel="lightbox"><img class="smallitem" src="images/smallitem.jpg" alt="Item 2 Small" /></a>
@@ -235,7 +235,7 @@ Shadowbox.init({
             <h3>Harvard Summer School</h3>
             <p>This summer I had the enormous privilege of spending a semester at Harvard.  Students at Harvard came from all over the world, my roommates for example, were from Georgia (country) and Brazil. This experience opened my eyes to a myriad of different cultures and taught me to see the world differently. Between classes, internships, workshops and friends, I had a very busy schedule. However, I was able to effectively manage my time by planning out my days with google calendar.</p>
             <p><a rel="lightbox" title="Harvard Summer School Transcript"  href="images/education/transcript.jpg">Transcript</a></p>
-           
+
             <h4>Courses Taken: </h4>
             <ul>
               <li>Great Ideas in <strong> Computer Science </strong> </li>
@@ -245,7 +245,7 @@ Shadowbox.init({
         </div>
       </div>
       <!--/#education-->
-      
+
       <div id="activities" class="section">
         <h2>Activities</h2>
         <ul id="portitems">
@@ -260,12 +260,12 @@ Shadowbox.init({
           </div>
         </ul>
         <div id="robotics" class="item">
-          <div class="description"> <a href="images/activities/cytrobyte3.jpg" rel="lightbox[cb]" title="Cytrobyte Team" ><img src="images/activities/cytrobyte3-preview.jpg" alt="Cytrobyte Team" /></a> <a href="images/activities/cytrobyte1.jpg" rel="lightbox[cb]" title="Cytrobyte I"><img class="smallitem" src="images/activities/cytrobyte1-preview.jpg" alt="Cytrobyte I" /></a> 
-            
-            <!-- Begin CB Gallery --> 
-            <a href="images/activities/cb1.jpg" rel="lightbox[cb]" title="Testing control of ROV"></a> <a href="images/activities/cb2.jpg" rel="lightbox[cb]" title="Building ROV Frame"></a> <a href="images/activities/cb3.jpg" rel="lightbox[cb]" title="3D Digital Compass"></a> <a href="images/activities/cb4.jpg" rel="lightbox[cb]" title="Gripper"></a> <a href="images/activities/cb5.jpg" rel="lightbox[cb]" title="Waterproof backplate design"></a> <a href="images/activities/cb6.jpg" rel="lightbox[cb]" title="Backplate CAD design"></a> <a href="images/activities/cb7.jpg" rel="lightbox[cb]" title="Cytrobyte I Front View"></a> <a href="images/activities/cb8.jpg" rel="lightbox[cb]" title="ROV parts"></a> <a href="images/activities/cb9.jpg" rel="lightbox[cb]" title="Design/brainstorming stage"></a> <a href="images/activities/cb10.jpg" rel="lightbox[cb]" title="Waterproof test"></a> <a href="images/activities/cb11.jpg" rel="lightbox[cb]" title="Cytrobyte I Top View"></a> <a href="images/activities/cb12.jpg" rel="lightbox[cb]" title="Testing ROV control"></a> <a href="images/activities/cb13.jpg" rel="lightbox[cb]" title="Coding"></a> <a href="images/activities/cb14.jpg" rel="lightbox[cb]" title="Inside the ROV"></a> <a href="images/activities/cb15.jpg" rel="lightbox[cb]" title="Testing the water pump"></a> <a href="images/activities/cb16.jpg" rel="lightbox[cb]" title="Competition Site: NASA Bouyancy lab"></a> <a href="images/activities/cb17.jpg" rel="lightbox[cb]" title="Cytrobyte I Side View"></a> <a href="images/activities/cb18.jpg" rel="lightbox[cb]" title="Competition"></a> <a href="images/activities/cb19.jpg" rel="lightbox[cb]" title="Compeition"></a> <a href="images/activities/cb20.jpg" rel="lightbox[cb]" title="Inside Cytrobyte I"></a> <a href="images/activities/cb21.jpg" rel="lightbox[cb]" title="Inside Cytrobyte I"></a> 
+          <div class="description"> <a href="images/activities/cytrobyte3.jpg" rel="lightbox[cb]" title="Cytrobyte Team" ><img src="images/activities/cytrobyte3-preview.jpg" alt="Cytrobyte Team" /></a> <a href="images/activities/cytrobyte1.jpg" rel="lightbox[cb]" title="Cytrobyte I"><img class="smallitem" src="images/activities/cytrobyte1-preview.jpg" alt="Cytrobyte I" /></a>
+
+            <!-- Begin CB Gallery -->
+            <a href="images/activities/cb1.jpg" rel="lightbox[cb]" title="Testing control of ROV"></a> <a href="images/activities/cb2.jpg" rel="lightbox[cb]" title="Building ROV Frame"></a> <a href="images/activities/cb3.jpg" rel="lightbox[cb]" title="3D Digital Compass"></a> <a href="images/activities/cb4.jpg" rel="lightbox[cb]" title="Gripper"></a> <a href="images/activities/cb5.jpg" rel="lightbox[cb]" title="Waterproof backplate design"></a> <a href="images/activities/cb6.jpg" rel="lightbox[cb]" title="Backplate CAD design"></a> <a href="images/activities/cb7.jpg" rel="lightbox[cb]" title="Cytrobyte I Front View"></a> <a href="images/activities/cb8.jpg" rel="lightbox[cb]" title="ROV parts"></a> <a href="images/activities/cb9.jpg" rel="lightbox[cb]" title="Design/brainstorming stage"></a> <a href="images/activities/cb10.jpg" rel="lightbox[cb]" title="Waterproof test"></a> <a href="images/activities/cb11.jpg" rel="lightbox[cb]" title="Cytrobyte I Top View"></a> <a href="images/activities/cb12.jpg" rel="lightbox[cb]" title="Testing ROV control"></a> <a href="images/activities/cb13.jpg" rel="lightbox[cb]" title="Coding"></a> <a href="images/activities/cb14.jpg" rel="lightbox[cb]" title="Inside the ROV"></a> <a href="images/activities/cb15.jpg" rel="lightbox[cb]" title="Testing the water pump"></a> <a href="images/activities/cb16.jpg" rel="lightbox[cb]" title="Competition Site: NASA Bouyancy lab"></a> <a href="images/activities/cb17.jpg" rel="lightbox[cb]" title="Cytrobyte I Side View"></a> <a href="images/activities/cb18.jpg" rel="lightbox[cb]" title="Competition"></a> <a href="images/activities/cb19.jpg" rel="lightbox[cb]" title="Compeition"></a> <a href="images/activities/cb20.jpg" rel="lightbox[cb]" title="Inside Cytrobyte I"></a> <a href="images/activities/cb21.jpg" rel="lightbox[cb]" title="Inside Cytrobyte I"></a>
             <!-- End Gallery -->
-            
+
             <h3>Robotics</h3>
             <p> <a class="noline" rel="shadowbox; height=720; width=1280; player=swf" href="http://youtube.googleapis.com/v/mfJXreeMEmU&amp;hl=en&amp;fs=1&amp;rel=0&amp;autoplay=1"> Watch Video </a>
             <p>In 2011, I got together with two friends and  created  a web site called &ldquo;<a href="http://www.cytrobyte.com" target="_blank">Cytrobyte.com</a>&rdquo;, its purpose is to get sponsor information  about who we are and what we do. The site grabbed the attention of several  sponsors and, after attending various interviews we accumulated $4,000.00 in  grants. We   collaborated to design, build, program and troubleshoot a fully functional Underwater ROV which we submitted to the 2012 MATE Underwater ROV Competition. </p>
@@ -325,15 +325,15 @@ Shadowbox.init({
         </div>
         <div id="filmmaking" class="item">
           <div class="description">
-            <h3>Filmmaking</h3>  
+            <h3>Filmmaking</h3>
             <div style="float:right; margin-left: 15px;"><img height="230px" src="images/remiwinner.png" alt="Remi Winner" /> </div>
             <p>In 8th grade, I began making short motion graphics for a profit. Since then, I have produced professional videos for<a target="_blank" href="http://realestatefanpages.com/"> RealEstateFanPages</a> and <a target="_blank" href="http://bpneighbors.com/fabric-of-america/79-fabric-of-america-fund/602-bp-employees-celebrate-fund-milestone">British Petroleum.</a> In my senior year I received a Silver and a Bronze Remi Award at Worldfest, an International Film Festival for the BP and Guthrie Videos (respectively). Producing videos requires excellent organization, time and patience.</p>
             <p>Motion Graphics allow me to implement most of my activities and skills to a single final product. A great example is my second typographic music video. I used programming to automate  tasks involving several layers and effects. I used my musical abilities to sync cuts and words to the song. Finally, I used my knowledge about typography and film to position the text in a pleasant way. </p>
             <p> We are taught that filmmaking often follows Murphy's Law; &quot;Anything that can go wrong will go wrong&quot;. Sometimes, actors forget to show up, the microphone fails or maybe the focus was a bit off. During post production, After Effects might crash, your file might get corrupted or maybe you realize you shot the whole scene wrong. While all of these events can make your life miserable, they only do so for a short moment of time. By spontaneously challenging you, these adversities force you to think creatively for different solutions and often lead to a better film. I have learned to stay calm and under pressure, a vital skill inside and outside of film. </p>
             <p>For more information about my filmmaking work see Work&gt;Fertogo and my Portfolio. </p>
            <!--<a href="http://48hourfilm.com/en/houston/2011.php">
-<img src="http://www.48hourfilm.com/badges/48hfp_houston_2011_tv_m.jpg" border="0" alt="48 Hour Filmmaker: Houston 2011"></a> 
-<a href="http://www.48hourfilm.com/houston/"> <img style="float:right; padding-right:5px; " src= "http://www.48hourfilm.com/badges/48hfp_houston_2013_tv_m.jpg" border="0" alt="48 Hour Filmmaker: Houston 2013"></a> --> 
+<img src="http://www.48hourfilm.com/badges/48hfp_houston_2011_tv_m.jpg" border="0" alt="48 Hour Filmmaker: Houston 2011"></a>
+<a href="http://www.48hourfilm.com/houston/"> <img style="float:right; padding-right:5px; " src= "http://www.48hourfilm.com/badges/48hfp_houston_2013_tv_m.jpg" border="0" alt="48 Hour Filmmaker: Houston 2013"></a> -->
           </div>
         </div>
         <div id="tutoring" class="item">
@@ -350,7 +350,7 @@ Shadowbox.init({
               <li> ASE (Academy of Science and Engineering) - Fun engineering type labs and projects. More info under Education</li>
               <li> <a target="_blank" href="http://taylorkoehn2.wix.com/shsnhs#!">NHS</a> (National Honor Society) - Admission based on scholarship, leadership, and service. </li>
               <li>NTHS - National Technical Honor Society</li>
-              <li>JETS (Junior Engineering Technical Society) - Take the <a target="_blank" href="http://www.tsaweb.org/TEAMS_UNITE">TEAMS</a> (Tests of Engineering Aptitude, Mathematics and Science)</li>
+              <li>JETS (Junior Engineering Technical Society) - Take the <a target="_blank" href="http://teams.tsaweb.org/">TEAMS</a> (Tests of Engineering Aptitude, Mathematics and Science)</li>
               <li>SHARC (Stratford High Advanced Robotics Club) - Participate in <a target="_blank" href="http://www.usfirst.org/">FIRST</a> robotics. </li>
               <li>Film Club - Producing short films, organizing battle of the bands</li>
               <li><a target="_blank" href="http://cms.springbranchisd.com/mentoring/CollegiateChallenge/tabid/25902/Default.aspx">Collegiate Challenge</a> - College Mentorship Program</li>
@@ -359,48 +359,48 @@ Shadowbox.init({
         </div>
       </div>
       <!--/#activities-->
-      
+
       <div id="awards" class="section">
         <h2> Awards </h2>
-         
-        
+
+
         <a class="noline" href="images/awards/hsa.jpg" rel="lightbox[awards]" title="Harvard Student Agencies"><img class="award" src="images/awards/hsa-preview.jpg" alt="Harvard Student Agencies" /></a>
          &nbsp;
         <a class="noline" href="images/awards/tamucc.jpg" rel="lightbox[awards]" title="Texas A&M University Corpus Christi"><img class="award" src="images/awards/tamucc-preview.jpg" alt="Texas A&M University Corpus Christi" /></a>
-         &nbsp; 
-        <a class="noline" href="images/awards/ut.jpg" rel="lightbox[awards]" title="University of Texas"><img class="award" src="images/awards/ut-preview.jpg" alt="University of Texas" /></a> 
+         &nbsp;
+        <a class="noline" href="images/awards/ut.jpg" rel="lightbox[awards]" title="University of Texas"><img class="award" src="images/awards/ut-preview.jpg" alt="University of Texas" /></a>
         &nbsp;&nbsp;
          <a class="noline" href="images/awards/jones2.jpg" rel="lightbox[awards]" title="Jones Scholarship"><img class="award" src="images/awards/jones2-preview.jpg" alt="Jones Scholarship" /></a>
-        
-        
-        <div style="margin-top:10px;"> 
-        <a class="noline" href="images/awards/tgs.jpg" rel="lightbox[awards]" title="The Greatest Save PSA"><img class="award" src="images/awards/tgs-preview.jpg" alt="Kindervision" /></a> 
+
+
+        <div style="margin-top:10px;">
+        <a class="noline" href="images/awards/tgs.jpg" rel="lightbox[awards]" title="The Greatest Save PSA"><img class="award" src="images/awards/tgs-preview.jpg" alt="Kindervision" /></a>
         &nbsp;
         <a class="noline" href="images/awards/w7b.jpg" rel="lightbox[awards]" title="World of 7 Billion"><img class="award" src="images/awards/w7b-preview.jpg" alt="World of 7 Billion" /></a>
         &nbsp;
         <a class="noline" href="images/awards/houstonchronicle.jpg" rel="lightbox[awards]" title="Hosuton Chronicle Student of the Week"><img class="award" src="images/awards/houstonchronicle-preview.jpg" alt="Houston Chronicle" /></a>
-         &nbsp;&nbsp; 
-        <a class="noline" href="images/awards/gc1.jpg" rel="lightbox[awards]" title="Guthrie Film Festival"><img class="award"  src="images/awards/gc1.jpg" alt="Guthrie Center" /></a> 
+         &nbsp;&nbsp;
+        <a class="noline" href="images/awards/gc1.jpg" rel="lightbox[awards]" title="Guthrie Film Festival"><img class="award"  src="images/awards/gc1.jpg" alt="Guthrie Center" /></a>
         </div>
-        
-           <div style="margin-top:10px;"> 
-        <a class="noline" href="images/awards/gc2.jpg" rel="lightbox[awards]" title="Guthrie Film Festival"><img class="award"  src="images/awards/gc2.jpg" alt="Guthrie Center" /></a> 
-        &nbsp; 
+
+           <div style="margin-top:10px;">
+        <a class="noline" href="images/awards/gc2.jpg" rel="lightbox[awards]" title="Guthrie Film Festival"><img class="award"  src="images/awards/gc2.jpg" alt="Guthrie Center" /></a>
+        &nbsp;
          <a class="noline" href="images/awards/cumlaude.jpg" rel="lightbox[awards]" title="Cum Laude"><img class="award" src="images/awards/cumlaude-preview.jpg" alt="Cum Laude" /></a>
-        &nbsp; 
+        &nbsp;
        <a class="noline" href="images/awards/shs2.jpg" rel="lightbox[awards]" title="Stratford High School 2010"><img class="award" src="images/awards/shs2-preview.jpg" alt="Stratford High School" /></a>
-         &nbsp;&nbsp; 
-        <a class="noline" href="images/awards/reflections.jpg" rel="lightbox[awards]" title="PTA Reflections"><img class="award" src="images/awards/reflections.jpg" alt="PTA Reflections" /></a> 
+         &nbsp;&nbsp;
+        <a class="noline" href="images/awards/reflections.jpg" rel="lightbox[awards]" title="PTA Reflections"><img class="award" src="images/awards/reflections.jpg" alt="PTA Reflections" /></a>
         </div>
-        
-        <div style="margin-top:10px;"> 
-        <a class="noline" href="images/awards/remi1.jpg" rel="lightbox[awards]" title="Worldfest International Film Festival"><img class="border" src="images/awards/remi1-preview.jpg" alt="Remi Award" /></a> &nbsp; 
-        <a class="noline" href="images/awards/band.jpg" rel="lightbox[awards]" title="Band"><img class="border" src="images/awards/band-preview.jpg" alt="Band" /></a> &nbsp; 
+
+        <div style="margin-top:10px;">
+        <a class="noline" href="images/awards/remi1.jpg" rel="lightbox[awards]" title="Worldfest International Film Festival"><img class="border" src="images/awards/remi1-preview.jpg" alt="Remi Award" /></a> &nbsp;
+        <a class="noline" href="images/awards/band.jpg" rel="lightbox[awards]" title="Band"><img class="border" src="images/awards/band-preview.jpg" alt="Band" /></a> &nbsp;
         <a class="noline" href="images/awards/nhs.jpg" rel="lightbox[awards]" title="National Honor Society"><img class="border" height="184px" width="148px" src="images/awards/nhs-preview.jpg" alt="nhs" /></a> &nbsp;
-         <a class="noline" href="images/awards/tennis.jpg" rel="lightbox[awards]" title="Tennis"><img class="border" src="images/awards/tennis-preview.jpg" alt="Tennis" /></a> &nbsp; 
-         <a class="noline" href="images/awards/bpa.jpg" rel="lightbox[awards]" title="Business Professionals of America"><img class="border" src="images/awards/bpa-preview.jpg" alt="Business Professionals of America" /></a> 
+         <a class="noline" href="images/awards/tennis.jpg" rel="lightbox[awards]" title="Tennis"><img class="border" src="images/awards/tennis-preview.jpg" alt="Tennis" /></a> &nbsp;
+         <a class="noline" href="images/awards/bpa.jpg" rel="lightbox[awards]" title="Business Professionals of America"><img class="border" src="images/awards/bpa-preview.jpg" alt="Business Professionals of America" /></a>
          </div>
-         
+
         <p>12th grade </br>
         </p>
         <ul>
@@ -451,7 +451,7 @@ Shadowbox.init({
         </ul>
       </div>
       <!--/#awards-->
-      
+
       <div id="work" class="section">
         <h2>Work</h2>
         <ul id="portitems">
@@ -468,19 +468,19 @@ Shadowbox.init({
             <p>In 2008, I experimented in the digital filmmaking world. Like many, I began by making silly videos with friends but soon began to show interest in special effects and motion graphics. Through the amazing internet, I learned Photoshop, Aftereffects and Vegas in my own time. Soon after, I entered a Youtube competition   consisting  of creating an introduction for a well established Youtuber. Not only did I win the competition, but was contacted by several Youtubers asking for an <a href="http://www.youtube.com/playlist?list=PLE6A137C0FCCCFA14&feature=view_all" target="_blank">intro</a>. This led to the founding of <a href="http://www.fertogo.com" target="_blank">Fertogo.com</a>. In this site, I shared some of my special effects and motion graphics work and placed a convenient form to request an intro (for a price of course). I organized the incoming request and set up a system of delivering the content and   received   payment through Paypal. I mainly used the money to further advance the quality of my films by   acquiring   new software or a better camera. Starting this business at such a young age allowed me to release my creativity and realize the value of money.</p>
             <p> My work has been well received on: </p>
             <ul>
-              <li> <a href="http://www.youtube.com/fertogo"target="_blank">Youtube</a>, earning exactly <strong> 
+              <li> <a href="http://www.youtube.com/fertogo"target="_blank">Youtube</a>, earning exactly <strong>
                 <!-- Get total Channel Views for Fertogo -->
                 <?php
-                require_once 'Zend/Loader.php'; 
-                Zend_Loader::loadClass('Zend_Gdata_YouTube');    
+                require_once 'Zend/Loader.php';
+                Zend_Loader::loadClass('Zend_Gdata_YouTube');
                   $yt = new Zend_Gdata_YouTube();
                   $yt->setMajorProtocolVersion(2);
-                  printTotalViews($yt->getuserUploads('fertogo'));  
+                  printTotalViews($yt->getuserUploads('fertogo'));
                 ?>
-                <!-- /Get total Channel Views for Fertogo --> 
+                <!-- /Get total Channel Views for Fertogo -->
                 </strong> views and over 5000 subscribers</li>
               <li> <a href="http://ae.tutsplus.com/articles/roundup/41-more-killer-typography-works/?search_index=5" target="_blank">Aetuts+</a>, a popular site among filmmakers and special effects artists featured my <a rel="shadowbox; height=720; width=1280; player=swf" href="http://youtube.googleapis.com/v/QncL9QRItBM&hl=en&fs=1&rel=0&autoplay=1">first typography video</a> along with the <em> Opening Titles for AMD Conference 2009 </em>. </li>
-              <li> National Competition -   my Public Service Announcement <a rel="shadowbox; height=720; width=1280; player=swf" href="http://youtube.googleapis.com/v/frqbKKnnJDM&hl=en&fs=1&rel=0&autoplay=1"> &quot;You can make a difference&quot;</a> was selected as a finalist on <a href="http://www.worldof7billion.org/student_video_contest/past_winners" target="_blank">population connection's national competition.</a> </li>
+              <li> National Competition -   my Public Service Announcement <a rel="shadowbox; height=720; width=1280; player=swf" href="http://youtube.googleapis.com/v/frqbKKnnJDM&hl=en&fs=1&rel=0&autoplay=1"> &quot;You can make a difference&quot;</a> was selected as a finalist on <a href="https://www.worldof7billion.org/student-video-contest/2010-2011-winners/" target="_blank">population connection's national competition.</a> </li>
               <li> Local Competitions -  My work <a rel="shadowbox; height=720; width=1280; player=swf" href="http://youtube.googleapis.com/v/qBrvK-JGN1M&hl=en&fs=1&rel=0&autoplay=1"> &quot;Designed Death&quot; </a> was screened at Studio Movie Grill, a local movie theater. Additionally, my Taco Cabana video &quot;TC Girl&quot; was selected as a finalist in 2011. </li>
               <li> Competitions - My motion graphics have won me several prices from small Youtube competitions</li>
               <li> Companies - I produced a video for <strong><a href="http://bpneighbors.com/fabric-of-america/79-fabric-of-america-fund/602-bp-employees-celebrate-fund-milestone" target="_blank">British Petroleum</a></strong> on the week of October 15 2012. To read more about this production please visit the Guthrie Center's <a href="http://guthriecenter.springbranchisd.com/programs/df/weaving-a-new-partnership" target="_blank">website</a>. Furthermore, during the Summer of 2011, I was contacted by a company and agreed to make a informational video about them. I had made a couple of typographic videos before, most of which took about 3 months to complete. The catch here was that they needed the video done in a weekend so they could submit it to a competition (which they won). I worked tirelessly for 48 hours and delivered <a rel="shadowbox; height=720; width=1280; player=swf" href="http://youtube.googleapis.com/v/XFgcKFE9HXA&hl=en&fs=1&rel=0&autoplay=1">this</a> video just in time.  </li>
@@ -524,7 +524,7 @@ Shadowbox.init({
         </div>
       </div>
       <!--/#work-->
-      
+
       <div id="skills" class="section">
         <h2> Skills</h2>
         <!--  <p> Languages, Computer Languages, Computer Programs</p> -->
@@ -584,7 +584,7 @@ Shadowbox.init({
         </div>
       </div>
       <!--/#skills-->
-      
+
       <div id="portfolio" class="section">
        <h2>Portfolio</h2>
       <!--<ul id="portitems">
@@ -593,46 +593,46 @@ Shadowbox.init({
             <li><a href="#code">Programming</a></li>
           </div>
         </ul>
-         <div id="film" class="section"> --> 
-          
-       
+         <div id="film" class="section"> -->
+
+
         <a class="noline" rel="shadowbox; height=720; width=1280; player=swf" href="http://youtube.googleapis.com/v/xA6rq_RGLlo&hl=en&fs=1&rel=0&autoplay=1"> <img src="images/portfolio/demoreel.jpg" width="802" /> </a>
-        
-        <div style="margin-top:20px;"> 
+
+        <div style="margin-top:20px;">
         <a class="noline" rel="shadowbox; height=720; width=1280; player=swf" href="http://youtube.googleapis.com/v/Ixf1NzrwavA&hl=en&fs=1&rel=0&autoplay=1"> <img src="images/portfolio/psa.jpg" /> </a>
          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        
-        <a class="noline" rel="shadowbox; height=720; width=1280; player=swf" href="http://youtube.googleapis.com/v/7w_H1t3mmKU&hl=en&fs=1&rel=0&autoplay=1"> <img class = "border" src="images/portfolio/around.jpg" /> </a> 
+
+        <a class="noline" rel="shadowbox; height=720; width=1280; player=swf" href="http://youtube.googleapis.com/v/7w_H1t3mmKU&hl=en&fs=1&rel=0&autoplay=1"> <img class = "border" src="images/portfolio/around.jpg" /> </a>
          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="noline" rel="shadowbox; height=720; width=1280; player=swf" href="http://youtube.googleapis.com/v/XFgcKFE9HXA&hl=en&fs=1&rel=0&autoplay=1"> <img src="images/portfolio/refp.jpg" /> </a> 
+        <a class="noline" rel="shadowbox; height=720; width=1280; player=swf" href="http://youtube.googleapis.com/v/XFgcKFE9HXA&hl=en&fs=1&rel=0&autoplay=1"> <img src="images/portfolio/refp.jpg" /> </a>
         </div>
-        
-        <div style="margin-top:25px;"> 
+
+        <div style="margin-top:25px;">
         <a class="noline" rel="shadowbox; height=720; width=1280; player=swf" href="http://youtube.googleapis.com/v/OeqYu9vtTKg&hl=en&fs=1&rel=0&autoplay=1"> <img src="images/portfolio/armada2.jpg" /> </a>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a class="noline" rel="shadowbox; height=720; width=1280; player=swf" href="http://youtube.googleapis.com/v/QncL9QRItBM&hl=en&fs=1&rel=0&autoplay=1"> <img src="images/portfolio/armada1.jpg" /> </a>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="noline" rel="shadowbox; height=720; width=1280; player=swf" href="http://youtube.googleapis.com/v/qBrvK-JGN1M&hl=en&fs=1&rel=0&autoplay=1"> <img src="images/portfolio/designed.jpg" /> </a> 
+        <a class="noline" rel="shadowbox; height=720; width=1280; player=swf" href="http://youtube.googleapis.com/v/qBrvK-JGN1M&hl=en&fs=1&rel=0&autoplay=1"> <img src="images/portfolio/designed.jpg" /> </a>
         </div>
-        
-        <div style="margin-top:25px;"> 
+
+        <div style="margin-top:25px;">
         <a class="noline" rel="shadowbox; height=720; width=1280; player=swf" href="http://youtube.googleapis.com/v/mfJXreeMEmU&hl=en&fs=1&rel=0&autoplay=1"> <img class = "border" src="images/portfolio/cytrobyte.jpg" /> </a>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a class="noline" rel="shadowbox; height=720; width=1280; player=swf" href="http://youtube.googleapis.com/v/WkemTCmm4QE&hl=en&fs=1&rel=0&autoplay=1"> <img class = "border" src="images/portfolio/tgs.jpg" /> </a>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a class="noline" rel="shadowbox; height=720; width=1280; player=swf" href="http://youtube.googleapis.com/v/frqbKKnnJDM&hl=en&fs=1&rel=0&autoplay=1"> <img src="images/portfolio/7billion.jpg" /> </a>
         </div>
-            
+
         </div>
         <!--</div>
-        
+
      <div id="code" class="section">
      Code Stuff goes here
-     </div> --> 
-      
-       
+     </div> -->
+
+
       <!--/#portfolio-->
-      
+
       <div id="contact" class="section">
         <h2>Contact Me</h2>
         <div style="float:right; width:350px;"> <img src="images/contactMe.png" usemap="#Map" />
@@ -641,17 +641,17 @@ Shadowbox.init({
           </map>
         </div>
         <!-- Begin Form -->
-        <p style="width:400px; border-right-style:dashed; border-right-width:thick;"> 
-          <script type="text/javascript" src="http://form.jotform.us/jsform/22498311756156"></script> 
-          <!-- End Form --> 
-          
+        <p style="width:400px; height: 300px; border-right-style:dashed; border-right-width:thick;">
+          Contact form removed
+          <!-- End Form -->
+
       </div>
-      <!--/#contact--> 
-      
+      <!--/#contact-->
+
     </div>
     <div id="cbot"></div>
   </div>
   <p class="copy">Copyright &copy; 2012 Fernando Trujano</p>
 </div>
 </body>
-</html>	
+</html>
