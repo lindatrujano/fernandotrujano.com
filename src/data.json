@@ -60,10 +60,6 @@
                         "name" : "Homepage",
                         "url" : "http://asterisks.io"
                     },
-                    {
-                        "name" : "Chrome Store",
-                        "url" : "https://chrome.google.com/webstore/detail/asterisks/iapbcmhmbjclpbkjgiienpmbjpfcngbl"
-                    }
 
                 ],
                 "imageUrl" : "img/asterisks.png"
