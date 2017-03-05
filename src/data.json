@@ -216,7 +216,7 @@
         "entries": [
             {
                 "title" : "Massachusetts Institute of Technology",
-                "description" : "Relevant Coursework: \n6.857 - Computer and Network Security \n6.033 - Computer Systems Engineering \n6.828 - Operating Systems Engineering  \n6.813 - UI Design and Implementation \n6.170 - Software studio \n6.034 - Artificial Intelligence \n6.046 - Design and Analysis of Algorithms \n6.004 - Computational Structures\n6.006 - Intro to algorithms\n6.005 - Elements of software construction \n6.002 - Circuits and Electronics \n6.041 - Probability \n6.042 - Mathematics for Computer Science\n6.02   - Digital Communications\n6.01 - Intro to Electrical Engineering and Computer Science",
+                "description" : "Relevant Coursework: \n6.858 - Computer Systems Security \n6.857 - Computer and Network Security \n6.036 - Machine Learning \n6.835 - Intelligent Multimodal User Interfaces \n6.033 - Computer Systems Engineering \n6.828 - Operating Systems Engineering  \n6.813 - UI Design and Implementation \n6.170 - Software studio \n6.034 - Artificial Intelligence \n6.046 - Design and Analysis of Algorithms \n6.004 - Computational Structures\n6.006 - Intro to algorithms\n6.005 - Elements of software construction \n6.002 - Circuits and Electronics \n6.041 - Probability \n6.042 - Mathematics for Computer Science\n6.02   - Digital Communications\n6.01 - Intro to Electrical Engineering and Computer Science",
                 "languages" : ["Class of 2017"],
                 "imageUrl" : "img/mit.png",
                 "links" : [
