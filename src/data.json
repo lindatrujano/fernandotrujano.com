@@ -1,5 +1,5 @@
 {
-    "summary" : "I am a full stack engineer and a senior at MIT studying Computer Science and Electrical Engineering.",
+    "summary" : "I am a full stack engineer and a senior at MIT studying Computer Science.",
 
     //Maybe
         //Zoid
@@ -221,7 +221,7 @@
                 "imageUrl" : "img/mit.png",
                 "links" : [
                     {
-                        "name" : "Electrical Engineering and Computer Science",
+                        "name" : "Computer Science and Engineering",
                     }
                 ]
             }
