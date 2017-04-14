@@ -1,9 +1,9 @@
 <div class="container project">
       <div class="row project-content">
         <span class="title">{{title}}</span>
-        {{#if languages}}
+        {{#if tabText}}
           <span class="languages">
-            {{#each languages}}
+            {{#each tabText}}
               {{this}}
               {{#unless @last}}|{{/unless}}
             {{/each}}

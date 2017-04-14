@@ -1,10 +1,8 @@
-<!-- Hello source code viewer. This site is made with handlebars and scss and is hosted on GitHub. The compiled code might look weird, and the js is minified for speed. If you are interested in checking out the original source, go to my repo: https://github.com/Fertogo/fernandotrujano.com -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <!--Info-->
-    <title>Fernando Trujano</title>
+    <title>Linda Trujano</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -20,33 +18,20 @@
   <body>
     <section id="main">
        <div id="profile-pic"> </div>
-       <h1 id="name">Fernando Trujano</h1>
-        <p id="summary">{{summary}}<br/>
-        Check out some of my work! </p>
+       <h1 id="name">Linda Trujano</h1>
+        <p id="summary">{{summary}}</p>
         <nav id="links">
-          <a href="http://resume.fernandotrujano.com" target="_blank" class="nowrap"><i class="fa fa-file-text fa-2x"></i>Resume</a>
-          <a href="https://github.com/Fertogo" target="_blank" class="nowrap"><i class="fa fa-github fa-2x"></i>GitHub</a>
-          <a href ="https://www.linkedin.com/in/trujano" target="_blank" class="nowrap"> <i class="fa fa-linkedin-square fa-2x"></i>LinkedIn</a>
-          <a href ="notes" target="_blank" class="nowrap"><i class="fa fa-file-text-o fa-2x"></i>Notes</a>
+          <a href="http://resume.lindatrujano.com" target="_blank" class="nowrap"><i class="fa fa-file-text fa-2x"></i>Resume</a>
+          <a href ="https://www.linkedin.com/in/lindatrujano/" target="_blank" class="nowrap"> <i class="fa fa-linkedin-square fa-2x"></i>LinkedIn</a>
         </nav>
 
     </section>
     <nav id="menu">
-      <a href="#projects">Projects </a>
       <a href="#education">Education</a>
-      <a href="#work">Work</a>
+      <a href="#work">Professional Experience</a>
+      <a href="#certifications">Certifications</a>
       <a href="#contact">Contact</a>
     </nav>
-
-    <section id="projects">
-      <h2> Projects </h2>
-      {{#each projects}}
-        <div class="container date-divider">{{year}}</div>
-        {{#each entries}}
-          {{>entry}}
-        {{/each}}
-      {{/each}}
-    </section>
 
     <section id="education">
       <h2>Education</h2>
@@ -58,8 +43,10 @@
       {{/each}}
     </section>
 
+    <hr style="width: 85%">
+
     <section id="work">
-      <h2>Work</h2>
+      <h2>Professional Experience</h2>
       {{#each work}}
         <div class="container date-divider">{{year}}</div>
         {{#each entries}}
@@ -68,8 +55,22 @@
       {{/each}}
     </section>
 
+    <hr style="width: 85%">
+
+    <section id="certifications">
+      <h2> Certifications </h2>
+      {{#each certification}}
+        <div class="container date-divider">{{year}}</div>
+        {{#each entries}}
+          {{>entry}}
+        {{/each}}
+      {{/each}}
+    </section>
+
+
+
     <section id="contact">
-      <p> trujano@mit.edu </p>
+      <p> lindatrujano91@gmail.com </p>
     </section>
 
   </body>

@@ -1,227 +1,18 @@
 {
-    "summary" : "I am a full stack engineer and a senior at MIT studying Computer Science.",
+    "summary" : "I am a little b.",
 
-    //Maybe
-        //Zoid
-        //HackMIT Puzzles
-        //Heartbeat
-        //Email annoyer
-    "projects" : [
-      {
-        "year" : "2016",
-        "entries" : [
-            {
-                "title" : "Security Analysis of DJI Phantom 3 Standard",
-                "description" : "In this paper, we present a collection of fatal attacks, minor observations, and associated security vulnerabilities, discovered over the course of a month of research. These vulnerabilities affect both the physical integrity of the drone and the security of user data. Finally, we make a set of recommendations that, if implemented, will dramatically bolster the security of the drone.",
-                "languages" : ["Security", "Pen Testing"],
-                "imageUrl" : "img/dji.png",
-                "links" : [
-                    {
-                        "name" : "Paper",
-                        "url" : "https://courses.csail.mit.edu/6.857/2016/files/9.pdf"
-                    },
-                ]
-
-            },
-            {
-                "title" : "Rox Star",
-                "description" : "Rox Star is a virtual reality karaoke experience with an immersive, reactive environment and professional vocal effects. Built with Unity and Reaper, this software leverages technologies such as virtual reality, motion tracking, and computer graphics to bring karaoke into this century! Winner of best Microsoft project at Hack@Brown 2016.",
-                "languages" : ["Unity","C#"],
-                "imageUrl" : "img/roxstar.jpg",
-                "links" : [
-                    {
-                        "name" : "Site",
-                        "url" : "http://devpost.com/software/rox-star"
-                    },
-                    {
-                        "name" : "Demo",
-                        "url" : "https://channel9.msdn.com/Blogs/raw-tech/Hackathon-Projects-from-Brown-University-Recap#time=09m37s"
-                    },
-                    {
-                        "name" : "Source",
-                        "url" : "https://github.com/Fertogo/Rox-Star"
-                    },
-                ]
-
-            }
-        ]
-
-      },
-      {
-        "year" : "2015",
-        "entries": [
-            {
-                "title" : "Asterisks",
-                "description" :
-                    "Asterisks allows you to lend your Internet accounts to friends without giving away your username or password. Maintain complete control over who can access your account and when, even allowing you to kick friends off your account when you'd like to use it yourself. \n Asterisks spawned from LinkedIn''s bay area intern hackathon, where our team took home 1st place.",
-                "languages" : ["Node.js","Express","HTML","CSS","PHP"],
-                "links" : [
-                    {
-                        "name" : "Homepage",
-                        "url" : "http://asterisks.io"
-                    },
-
-                ],
-                "imageUrl" : "img/asterisks.png"
-
-            },
-            {
-                "title" : "Custom Workout Timer",
-                "description" :
-                    "This Pebble app allows you to easily create custom interval timers (with names) for your workouts.The Pebble will time you and alert you when it's time to change moves based on your own workout program. Example: Plank for 2 minutes, pushups for 45 seconds... etc.\n The app consists of a Pebble side C code that request moves from the phone app (writen in JS). The online workout manager uses a combination of HTML/CSS, JS and Node.js to allow users to enter workouts from their phone or computer. \nThere are currently over 10,000 people using this app in more than 140 countries around the world.",
-                "languages" : ["C","JS","HTML","CSS","Node.js"],
-                "links" : [
-                    {
-                        "name" : "App Store",
-                        "url" : "https://apps.getpebble.com/applications/53b8f8d4c09b06bcc7000007"
-                    },
-                    {
-                        "name" : "Source",
-                        "url" : "https://github.com/Fertogo/Pebble-workout-timer"
-                    }
-
-                ],
-                "imageUrl" : "img/customWorkoutTimer.jpg"
-
-            },
-            {
-                "title" : "7Kreator",
-                "description" : "This application allows anyone to easily create images for the 7K Display in Simmons Hall.",
-                "languages" : ["JS","HTML","CSS"],
-                "imageUrl" : "img/7K.png",
-                "links" : [
-                    {
-                        "name" : "Demo",
-                        "url" : "http://simmons-dev.mit.edu/7Kreator/"
-                    },
-                    {
-                        "name" : "Source",
-                        "url" : "https://github.com/Fertogo/7Kreator"
-                    }
-
-                ]
-
-            },
-            {
-                "title" : "VRtravel",
-                "description" : "Virtually immerse yourself in the beauties of the world without leaving your room. Enjoy a 360 degree virtual reality view of over 100 cities using Google Cardboard. Best Travel Hack at Hack@Brown 2015",
-                "languages" : ["Python", "JS","HTML","CSS"],
-                "imageUrl" : "img/VRTravel.jpg",
-                "links" : [
-                    {
-                        "name" : "Source",
-                        "url" : "https://github.com/Fertogo/VRtravel"
-                    }
-
-                ]
-
-            }
-        ]
-      },
-      {
-        "year" : "2014",
-        "entries": [
-            {
-                "title" : "Magic LEDs",
-                "description" : "Control over 600 leds in our room anywhere in the world, from your phone or smartwatch (Pebble).",
-                "languages" : ["Arduino" , "Android" , "C(Pebble SDK)" , "JS"],
-                "imageUrl" : "img/magicLED.jpg",
-                "links" : [
-                    {
-                        "name" : "Source(Pebble)",
-                        "url" : "https://github.com/Fertogo/MagicLED"
-                    }
-                ]
-
-            },
-        ]
-      },
-      {
-        "year" : "2013",
-        "entries": [
-            {
-                "title" : "MIT TubeHack",
-                "description" : "MIT sends you their admissions letter in a cool silver tube, they also challenge you to hack it and do something cool with it. I made a POV (Persistence of Vision) display that can show different messages when you move it back and forth..",
-                "languages" : ["Arduino"],
-                "imageUrl" : "img/tubehack.jpg",
-                "links" : [
-                    {
-                        "name" : "Pictures",
-                        "url" : "http://hackthetubes17.tumblr.com/post/45298164956/from-fernando-trujano-subject-fernando"
-                    }
-                ]
-
-            },
-            {
-                "title" : "AudioSyncR",
-                "description" : "AudioSyncR is an After Effects script for semi-automatic typography music video synching. I've created several typography music videos over the years. I really enjoy the animating part of the process but don't particularly enjoy creating hundereds of layers and individually syncing them to the song. AudioSyncR solves this issue. Users first go through the song and \"tap\" the beat. They then enter the lyrics through a song and the script will automatically create a new text layer for each word that starts at the correct point to the song. I also made the script compatible with another script, TypeMonkey. Using both of these, anyone can create a full typography music video in 20 minutes. I sold the exclusive hosting rights of the script to aetuts, so it is not open source or currently available.",
-                "languages" : ["Adobe ExtendScript","ScriptUI"],
-                "imageUrl" : "img/aeScript.jpg",
-                "links" : [
-                    {
-                        "name" : "Demo",
-                        "url" : "https://www.youtube.com/watch?v=fZEAa4a7wG0"
-                    }
-                ]
-
-            }
-        ]
-      },
-      {
-        "year" : "2012",
-        "entries": [
-            {
-                "title" : "Underwater Robotics",
-                "description" : "In Junior year of highschool, 2 friends and I designed, built, programed, and tested our very own Remotely Operated Vehicle complete with a graphical control station and precise joystick controls. Our underwater robot used a combination of hardware and software to accomplish specific tasks such as sucking simulated oil, grabbing multiple objects, detecting metal, and measuring the length of a shipwreck. The robot itself used an arduino mega as its microprocessor and a control system coded by us in C#. We communicated with the arduino via UDP using a 50ft CAT 5e cable.",
-                "languages" : ["C#","Arduino"],
-                "imageUrl" : "img/rov.jpg",
-                "links" : [
-                    {
-                        "name" : "Technical Report",
-                        "url" : "http://fernandotrujano.com/archive/CytrobyteITechnicalReport.pdf"
-                    }
-                ]
-
-            },
-            {
-                "title" : "High School Site",
-                "description" : "I made this site as a portfolio to showcase my highschool work. The site uses jquery for animations and utilized the youtube API to dynamically update the total number of YouTube views. The site has since been archived.  ",
-                "languages" : ["JS","HTML", "CSS", "PHP"],
-                "imageUrl" : "img/hs.jpg",
-                "links" : [
-                    {
-                        "name" : "Site",
-                        "url" : "http://hs.fernandotrujano.com"
-                    }
-                ]
-            },
-            {
-                "title" : "Filmmaking and Motion graphics",
-                "description" : "My filmmaking work has earned two Remi Awards, reached the finals in national competitions and received over 200,000 views on YouTube",
-                "languages" : ["AfterEffects","Vegas", "Final Cut Pro", "Photoshop"],
-                "imageUrl" : "img/film.jpg",
-                "links" : [
-                    {
-                        "name" : "Youtube",
-                        "url" : "https://youtube.com/fertogo"
-                    }
-                ]
-            },
-        ]
-      },
-    ],
     "education" : [
       {
         "year" : "2013-2017",
         "entries": [
             {
-                "title" : "Massachusetts Institute of Technology",
-                "description" : "Relevant Coursework: \n6.858 - Computer Systems Security \n6.857 - Computer and Network Security \n6.036 - Machine Learning \n6.835 - Intelligent Multimodal User Interfaces \n6.033 - Computer Systems Engineering \n6.828 - Operating Systems Engineering  \n6.813 - UI Design and Implementation \n6.170 - Software studio \n6.034 - Artificial Intelligence \n6.046 - Design and Analysis of Algorithms \n6.004 - Computational Structures\n6.006 - Intro to algorithms\n6.005 - Elements of software construction \n6.002 - Circuits and Electronics \n6.041 - Probability \n6.042 - Mathematics for Computer Science\n6.02   - Digital Communications\n6.01 - Intro to Electrical Engineering and Computer Science",
-                "languages" : ["Class of 2017"],
+                "title" : "Harvard University",
+                "description" : "Some stuff about how rich people at Harvard are here. ",
+                "tabText" : ["Class of 2015"],
                 "imageUrl" : "img/mit.png",
                 "links" : [
                     {
-                        "name" : "Computer Science and Engineering",
+                        "name" : "Psychology with a Citation in French",
                     }
                 ]
             }
@@ -230,55 +21,30 @@
     ],
     "work" : [
       {
-        "year" : "2016",
+        "year" : "2017",
         "entries": [
             {
-                "title" : "Synack - Software Engineering Intern",
-                "description" : "Developed tools for automatic detection of common web vulnerabilites as part of the KPCB Fellowship program.",
-                "languages" : ["Go","Javascript"],
-                "imageUrl" : "img/synack.png",
+                "title" : "Harley Davidson Motor Company",
+                "description" : "Stuff here",
+                "tabText" : ["Associate Generalist, HR Development Program"],
+                "imageUrl" : "http://placekitten.com/g/400/200",
                 "links" : [
                     {
                         "name" : "Company Site",
-                        "url"  : "http://synack.com/"
-                    }
-                ]
-            },
-            {
-                "title" : "Disney - Software Engineering Intern",
-                "description" : "Worked with the mobile team to develop a second screen interactive experience for Disneyland''s 60th aniversary special. The app uses Walt Disney Imagineering’s Made with Magic technology to deliver a second screen, interactive experience that syncs directly to the musical segments and brings colorful light shows and original content right to your mobile phone.",
-                "languages" : ["C++","Cocos2dx","Android","Java"],
-                "imageUrl" : "img/disney.png",
-                "links" : [
-                    {
-                        "name" : "Blog post",
-                        "url"  : "https://ohmy.disney.com/insider/2016/02/17/inside-the-app-that-allows-you-to-become-a-part-of-the-disneyland-60th-special/"
+                        "url"  : "http://http://www.harley-davidson.com/"
                     }
                 ]
             }
         ]
       },
       {
-        "year" : "2015",
+        "year" : "2016",
         "entries": [
             {
-                "title" : "LinkedIn - Web Developer Intern",
-                "description" : "Worked on a new front facing product as part of the growth team using Play/Java, Javascript and HTML/CSS. Developed elegant and effcient code on a large codebase for 380M+ users",
-                "languages" : ["Play","Java","HTML/CSS","Dust","Javascript"],
-                "imageUrl" : "img/linkedin.png"
-            },
-            {
-                "title" : "Slide - Software Engineering Intern",
-                "description" : "Focused on developing the web application core. Implemented an advanced card parser and main account pages complete with smooth transition animations for optimal user experience. ",
-                "languages" : ["React.js","Reflux","GSAP", "HTML", "CSS", "jQuery"],
-                "imageUrl" : "img/slide.png",
-                "links" : [
-                    {
-                        "name" : "Company Site",
-                        "url" : "http://getslide.com"
-                    }
-                ]
-
+                "title" : "GiantBug Education",
+                "description" : "Start-up company that provides educational programs and resources to local and international students",
+                "tabText" : ["Academic Associate of Program Design"],
+                "imageUrl" : "http://placekitten.com/g/400/200",
             },
         ]
       },
@@ -286,10 +52,10 @@
         "year" : "2014",
         "entries": [
             {
-                "title" : "MediaLab - Undergraduate Researcher",
-                "description" : "UROP in Changing Places group. Focused on LightByte, an interactive sun pixel display with over 400 individually controlled shutters\nMaintained the current LightByte system, expanded the Andorid application, and implemented server connections/real-time streaming features to support remote interactions through a web interface\nProduced websites, graphics and videos to showcase various research projects",
-                "languages" : ["Android","Java","WebRTC", "HTML", "CSS", "JS"],
-                "imageUrl" : "img/medialab.png",
+                "title" : "RoLa Languages",
+                "description" : "Language institute that offers Spanish, French, and Portuguese classes to students of all ages and  backgrounds",
+                "tabText" : ["Spanish Teacher"],
+                "imageUrl" : "http://placekitten.com/g/400/200",
                 "links" : [
                     {
                         "name" : "More Info",
@@ -298,10 +64,16 @@
                 ]
             },
             {
-                "title" : "MIT- 6.01 Undergraduate Lab Assistant",
-                "description" : "Worked with staff/professors to prepare design labs for 6.01 - Intro to EECS\nAssisted students with basic OOP and algorithm concepts and helped debug circuits",
-                "languages" : ["Python"],
-                "imageUrl" : "img/miteecs.png",
+                "title" : "International Academic Alliance",
+                "description" : "•  Taught English curriculum to Chinese high school students and led dance extra-curricular activity",
+                "tabText" : ["English Teacher"],
+                "imageUrl" : "http://placekitten.com/g/400/200",
+            },
+            {
+                "title" : "Nock Laboratory for Clinical Psychology",
+                "description" : "Provided assistance in a study of suicide attempts in the military",
+                "tabText" : ["Reserach Assistant"],
+                "imageUrl" : "http://placekitten.com/g/400/200",
             }
         ]
       },
@@ -309,14 +81,78 @@
         "year" : "2012",
         "entries": [
             {
-                "title" : "Harvard Student Agencies - Web Developer Intern",
-                "description" : "Built and designed ”The Harvard Shop’s” custom order, request a quote and portfolio pages",
-                "imageUrl" : "img/hsa.png",
+                "title" : "Harvard College Social Enterprise Association",
+                "description" : "Organization dedicated to plan a Spring Break trip to teach English at a non-profit middleschool for children of migrant workers",
+                "imageUrl" : "http://placekitten.com/g/400/200",
 
-                "languages" : ["Liquid","HTML","CSS", "jQuery"],
+                "tabText" : ["Vice President"],
+
+            },
+            {
+                "title" : "Harvard Student Agencies",
+                "description" : "•  Translated official documents as well as live translations for HSA, the largest student-run company in the world",
+                "imageUrl" : "http://placekitten.com/g/400/200",
+
+                "tabText" : ["Spanish Translator"],
+
+            },
+            {
+                "title" : "McNally Laboratory for Emotional Disorders, ",
+                "description" : "Stuff",
+                "imageUrl" : "http://placekitten.com/g/400/200",
+
+                "tabText" : ["Research Assistant"],
 
             }
         ]
       }
+    ],
+
+    "certification" : [
+      {
+        "year" : "2017",
+        "entries" : [
+            {
+                "title" : "Six Sigma Yellow Belt",
+                "description" : "Created standard job description template that Harley-Davidson will utilize globally",
+                "tabText" : [],
+                "imageUrl" : "http://placekitten.com/g/400/200",
+                "links" : [
+                    {
+                        "name" : "Paper",
+                        "url" : "https://courses.csail.mit.edu/6.857/2016/files/9.pdf"
+                    },
+                ]
+
+            },
+        ]
+
+      },
+      {
+        "year" : "2015",
+        "entries": [
+            {
+                "title" : "Master Certificate in Human Resources",
+                "description" :
+                    "Asterisks allows you to lend your Internet accounts to friends without giving away your username or password. Maintain complete control over who can access your account and when, even allowing you to kick friends off your account when you'd like to use it yourself. \n Asterisks spawned from LinkedIn''s bay area intern hackathon, where our team took home 1st place.",
+                "tabText" : ["Node.js","Express","HTML","CSS","PHP"],
+                "links" : [
+                    {
+                        "name" : "Homepage",
+                        "url" : "http://asterisks.io"
+                    },
+
+                ],
+                "imageUrl" : "http://placekitten.com/g/400/200",
+
+            }
+
+
+        ]
+      }
+
+
     ]
+
+
 }
