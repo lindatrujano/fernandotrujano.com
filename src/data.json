@@ -3,11 +3,11 @@
 
     "education" : [
       {
-        "year" : "2013-2017",
+        "year" : "2011-2015",
         "entries": [
             {
                 "title" : "Harvard University",
-                "description" : "Some stuff about how rich people at Harvard are here. ",
+                "description" : "Some stuff about how super rich people at Harvard are here. ",
                 "tabText" : ["Class of 2015"],
                 "imageUrl" : "img/mit.png",
                 "links" : [
@@ -31,7 +31,7 @@
                 "links" : [
                     {
                         "name" : "Company Site",
-                        "url"  : "http://http://www.harley-davidson.com/"
+                        "url"  : "http://www.harley-davidson.com/"
                     }
                 ]
             }
@@ -91,7 +91,7 @@
             {
                 "title" : "Harvard Student Agencies",
                 "description" : "•  Translated official documents as well as live translations for HSA, the largest student-run company in the world",
-                "imageUrl" : "http://placekitten.com/g/400/200",
+                "imageUrl" : "img/hsa.jpg",
 
                 "tabText" : ["Spanish Translator"],
 

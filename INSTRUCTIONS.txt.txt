@@ -1,0 +1,8 @@
+1) Double click on work file
+   Browswer will open to the page. Text editor will open. 
+2) Select data.json from the text editor sidebar
+3) Make any changes that you need and save
+4) Refresh the page on the browser to see changes (might take a couple of seconds)
+5) When you are happy with the changes close the black window that opened before (ignore any warnings)
+6) Click on the put-online file and wait
+7) Verify that changes made it to real site (might take a couple of minutes)
