@@ -18,15 +18,15 @@ section > h2 {
   min-height: 540px;
   padding: 0 5px;
   margin: 0;
-  background: rgba(203,96,179,1);
-  background: -moz-linear-gradient(top, rgba(203,96,179,1) 0%, rgba(193,70,161,1) 33%, rgba(168,0,119,1) 86%, rgba(219,54,164,1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(203,96,179,1)), color-stop(33%, rgba(193,70,161,1)), color-stop(86%, rgba(168,0,119,1)), color-stop(100%, rgba(219,54,164,1)));
-  background: -webkit-linear-gradient(top, rgba(203,96,179,1) 0%, rgba(193,70,161,1) 33%, rgba(168,0,119,1) 86%, rgba(219,54,164,1) 100%);
-  background: -o-linear-gradient(top, rgba(203,96,179,1) 0%, rgba(193,70,161,1) 33%, rgba(168,0,119,1) 86%, rgba(219,54,164,1) 100%);
-  background: -ms-linear-gradient(top, rgba(203,96,179,1) 0%, rgba(193,70,161,1) 33%, rgba(168,0,119,1) 86%, rgba(219,54,164,1) 100%);
-  background: linear-gradient(to bottom, rgba(203,96,179,1) 0%, rgba(193,70,161,1) 33%, rgba(168,0,119,1) 86%, rgba(219,54,164,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#db36a4', GradientType=0 );
 
+  background: rgba(164,16,53,1);
+  background: -moz-linear-gradient(top, rgba(164,16,53,1) 0%, rgba(176,86,77,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(164,16,53,1)), color-stop(100%, rgba(176,86,77,1)));
+  background: -webkit-linear-gradient(top, rgba(164,16,53,1) 0%, rgba(176,86,77,1) 100%);
+  background: -o-linear-gradient(top, rgba(164,16,53,1) 0%, rgba(176,86,77,1) 100%);
+  background: -ms-linear-gradient(top, rgba(164,16,53,1) 0%, rgba(176,86,77,1) 100%);
+  background: linear-gradient(to bottom, rgba(164,16,53,1) 0%, rgba(176,86,77,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a41035', endColorstr='#b0564d', GradientType=0 );
 
   margin-bottom: -50px;
   #profile-pic {
@@ -80,14 +80,14 @@ section > h2 {
   text-align: center;
   padding-top:10px;
   color: white;
-  background-color: rgba(219, 54, 164, .95);
+  background-color: #A41034;
   a {
     padding: 10px;
     vertical-align: middle;
     color: white;
     text-decoration: none;
     &.selected {
-      color: #f5b8e1;
+      color: #ec869f;
     }
   }
 }
@@ -108,7 +108,7 @@ section {
     background-color: #ffffff;
   }
   &#contact {
-    background-color: rgba(219, 54, 164, .95);
+    background-color: #A41034;
     h2 {
       color: white;
     }
@@ -125,7 +125,7 @@ section {
 }
 
 .date-divider{
-  color: rgba(219, 54, 164, .95);
+  color: #A41034;
   width: 100%;
 
   height: 0px;
@@ -170,7 +170,7 @@ section {
   }
   .languages{
     float: right;
-    background-color: rgba(219, 54, 164, .95);
+    background-color: #A41034;
     color: #ffffff;
 
     padding: 5px;
@@ -265,7 +265,7 @@ section {
 
   .date-divider {
     border-top-style: dashed;
-    border-color: rgba(219, 54, 164, .95);
+    border-color: #A41034;
     border-width: 0px;
     text-align: left;
   }
