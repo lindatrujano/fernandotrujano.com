@@ -1,5 +1,5 @@
 {
-    "summary" : "I am a little b. test",
+    "summary" : "Motivated, multicultural, and goal-oriented young professional who strives to positively impact HR practices while building business acumen skills.",
 
     "education" : [
       {
@@ -7,12 +7,12 @@
         "entries": [
             {
                 "title" : "Harvard University",
-                "description" : "Some stuff about how super rich people at Harvard are here. ",
+                "description" : " ",
                 "tabText" : ["Class of 2015"],
-                "imageUrl" : "img/mit.png",
+                "imageUrl" : "img/Harvard.png",
                 "links" : [
                     {
-                        "name" : "Psychology with a Citation in French",
+                        "name" : "BA in Psychology with a Citation in French",
                     }
                 ]
             }
@@ -24,10 +24,10 @@
         "year" : "2017",
         "entries": [
             {
-                "title" : "Harley Davidson Motor Company",
-                "description" : "Stuff here",
+                "title" : "Harley-Davidson Motor Company",
+                "description" : "Three-year rotational program across five Centers of Excellence in Human Resources. <br> Business Services (5/2016-10/2016) <br> • Facilitated two organizational development workshops.<br> Developed curriculum for Change Leadership workshop that 40+ employees attended. <br> • Supported workplace investigations, documented notes, and created case assessments.<br> • Provided recommendation for new employee orientation in Mexico, Canada, and Brazil. <br> • Supported employee development review process for 8+ teams. <br> • Coordinated wellness event that hosted 90+ employees. <br> Shared Services (Second rotation 05/2016 – Present) <br> • Prepared severance letters for employees during restructuring of company. <br> • Led change management work for implementation of new time tracking system in the US and Canada. <br> • Developed online training for 700+ employees in the US and Canada. <br> • Implemented biweekly newsletter to improve communication within HR Service Center. <br> •  Led change management work for implementation of single sign-on capability for payroll system.",
                 "tabText" : ["Associate Generalist, HR Development Program"],
-                "imageUrl" : "http://placekitten.com/g/400/200",
+                "imageUrl" : "img/harleyd.png",
                 "links" : [
                     {
                         "name" : "Company Site",
@@ -38,28 +38,59 @@
         ]
       },
       {
-        "year" : "2016",
+        "year" : "2015-2016",
         "entries": [
             {
-                "title" : "GiantBug Education",
-                "description" : "Start-up company that provides educational programs and resources to local and international students",
+                "title" : "Knovva Academy (formerly GiantBug Education)",
+                "description" : "Start-up company that provides educational programs and resources to local and international students. <br> • Contributed to the development of strategic initiatives for new academic programs.<br> • Recruited teachers and speakers for summer program.<br> • Coordinated summer program for high school students from China.<br> • Traveled to China four times to deliver presentations and recruit students.",
                 "tabText" : ["Academic Associate of Program Design"],
-                "imageUrl" : "http://placekitten.com/g/400/200",
-            },
+                "imageUrl" : "img/knovva.png",
+                 "links" : [ 
+                    { 
+                        "name" : "Company Site",
+                        "url"  : "http://www.knovva.com/"
+                    }
+                ]
+            }
         ]
       },
-      {
-        "year" : "2014",
+        
+       {
+        "year" : "2015",
         "entries": [
             {
-                "title" : "RoLa Languages",
-                "description" : "Language institute that offers Spanish, French, and Portuguese classes to students of all ages and  backgrounds",
-                "tabText" : ["Spanish Teacher"],
-                "imageUrl" : "http://placekitten.com/g/400/200",
+                "title" : "Contact",
+                "description" : "Peer counseling group focused on issues of sexual orientation, sexuality, and relationships. <br> • Provided non-judgmental, non-directive, and confidential peer counseling to Harvard undergraduates. <br> • Staffed peer counseling room 5 hours per week.",
+                "tabText" : ["Peer Counselor"],
+                "imageUrl" : "img/contactlogo.png",
+                
+            },
+        ]
+    },
+
+      {
+        "year" : "2013-2014",
+        "entries": [
+              {
+                "title" : "Harvard Taiwan Leadership Conference",
+                "description" : "Organization dedicated to holding a week-long conference to expose Taiwanese high school students to leadership workshops. <br> • Led recruitment initiatives to hire Harvard students as teachers. <br> • Planned conference workshops and extra-curricular activities. <br> • Managed 1,084 applications from Taiwanese students and made the final selection of 84 students. <br> • Handled disciplinary issues of 84 students and 25 staff members during the conference. ",
+                "tabText" : ["Director"],
+                "imageUrl" : "img/HTLC.png",
                 "links" : [
                     {
                         "name" : "More Info",
-                        "url" : "http://augmentingnature.com/"
+                        "url" : "http://www.htlcinfo.com/"
+                    }
+                ]
+            },{
+                "title" : "RoLa Languages",
+                "description" : "Language institute that offers Spanish, French, and Portuguese classes to students of all ages and  backgrounds. <br> • Developed curriculum for beginner and intermediate Spanish classes for adults. <br> • Taught English and Spanish classes in-person and online to national and international students. <br> • Created video series of online Spanish classes. ",
+                "tabText" : ["Spanish Teacher"],
+                "imageUrl" : "img/rolalang.png",
+                "links" : [
+                    {
+                        "name" : "More Info",
+                        "url" : "http://www.rolalang.com/"
                     }
                 ]
             },
@@ -67,23 +98,41 @@
                 "title" : "International Academic Alliance",
                 "description" : "•  Taught English curriculum to Chinese high school students and led dance extra-curricular activity",
                 "tabText" : ["English Teacher"],
-                "imageUrl" : "http://placekitten.com/g/400/200",
+                "imageUrl" : "img/international.png",
+                "links" : [
+{ "name": "More Info",
+    "url": "https://www.iaapathway.com/"
+}
+
+                ]
+            },
+             {
+                "title" : "Harvard Youth Leadership Initiative",
+                "description" : "Organization that provides free weekly leadership courses for middle school students. <br> • Recruited Harvard students as teachers. <br> • Supervised and provided workshops on negotiation, public speaking, time-management, and goal setting. ",
+                "tabText" : ["Director"],
+                "imageUrl" : "",
             },
             {
                 "title" : "Nock Laboratory for Clinical Psychology",
                 "description" : "Provided assistance in a study of suicide attempts in the military",
                 "tabText" : ["Reserach Assistant"],
-                "imageUrl" : "http://placekitten.com/g/400/200",
+                "imageUrl" : "",
+                "links" : [ 
+                    {
+                        "name" : "More Info",
+                        "url" : "https://nocklab.fas.harvard.edu"
+                    }
+                ]
             }
         ]
-      },
+            },
       {
-        "year" : "2012",
+        "year" : "2012-2013",
         "entries": [
             {
                 "title" : "Harvard College Social Enterprise Association",
                 "description" : "Organization dedicated to plan a Spring Break trip to teach English at a non-profit middleschool for children of migrant workers",
-                "imageUrl" : "http://placekitten.com/g/400/200",
+                "imageUrl" : "",
 
                 "tabText" : ["Vice President"],
 
@@ -94,14 +143,26 @@
                 "imageUrl" : "img/hsa.jpg",
 
                 "tabText" : ["Spanish Translator"],
+                "links" : [
+                    {
+                    "name": "More Info",
+                    "url" : "https://hsa.net/"
+                    }
+                ]
 
             },
             {
                 "title" : "McNally Laboratory for Emotional Disorders, ",
-                "description" : "Stuff",
-                "imageUrl" : "http://placekitten.com/g/400/200",
+                "description" : "• Ran clinically depressed participants through computer study. <br> • Transcribed and coded interviews of participants with complicated grief.",
+                "imageUrl" : "",
 
                 "tabText" : ["Research Assistant"],
+                "links" : [
+                    { 
+                      "name": "More Info",
+                      "url" : "https://www.mcnallylab.com/"
+                    }
+                ]
 
             }
         ]
@@ -116,10 +177,10 @@
                 "title" : "Six Sigma Yellow Belt",
                 "description" : "Created standard job description template that Harley-Davidson will utilize globally",
                 "tabText" : [],
-                "imageUrl" : "http://placekitten.com/g/400/200",
+                "imageUrl" : "",
                 "links" : [
                     {
-                        "name" : "Paper",
+                        "name" : "",
                         "url" : "https://courses.csail.mit.edu/6.857/2016/files/9.pdf"
                     },
                 ]
@@ -134,16 +195,16 @@
             {
                 "title" : "Master Certificate in Human Resources",
                 "description" :
-                    "Asterisks allows you to lend your Internet accounts to friends without giving away your username or password. Maintain complete control over who can access your account and when, even allowing you to kick friends off your account when you'd like to use it yourself. \n Asterisks spawned from LinkedIn''s bay area intern hackathon, where our team took home 1st place.",
-                "tabText" : ["Node.js","Express","HTML","CSS","PHP"],
+                    "",
+                "tabText" : ["Cornell University"],
                 "links" : [
                     {
-                        "name" : "Homepage",
-                        "url" : "http://asterisks.io"
+                        "name" : "",
+                        "url" : ""
                     },
 
                 ],
-                "imageUrl" : "http://placekitten.com/g/400/200",
+                "imageUrl" : "",
 
             }
 
