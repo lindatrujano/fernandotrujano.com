@@ -45,8 +45,8 @@
                 "description" : "Start-up company that provides educational programs and resources to local and international students. <br> • Contributed to the development of strategic initiatives for new academic programs.<br> • Recruited teachers and speakers for summer program.<br> • Coordinated summer program for high school students from China.<br> • Traveled to China four times to deliver presentations and recruit students.",
                 "tabText" : ["Academic Associate of Program Design"],
                 "imageUrl" : "img/knovva.png",
-                 "links" : [ 
-                    { 
+                 "links" : [
+                    {
                         "name" : "Company Site",
                         "url"  : "http://www.knovva.com/"
                     }
@@ -54,7 +54,7 @@
             }
         ]
       },
-        
+
        {
         "year" : "2015",
         "entries": [
@@ -63,7 +63,7 @@
                 "description" : "Peer counseling group focused on issues of sexual orientation, sexuality, and relationships. <br> • Provided non-judgmental, non-directive, and confidential peer counseling to Harvard undergraduates. <br> • Staffed peer counseling room 5 hours per week.",
                 "tabText" : ["Peer Counselor"],
                 "imageUrl" : "img/contactlogo.png",
-                
+
             },
         ]
     },
@@ -100,10 +100,9 @@
                 "tabText" : ["English Teacher"],
                 "imageUrl" : "img/international.png",
                 "links" : [
-{ "name": "More Info",
-    "url": "https://www.iaapathway.com/"
-}
-
+                    { "name": "More Info",
+                        "url": "https://www.iaapathway.com/"
+                    }
                 ]
             },
              {
@@ -117,7 +116,7 @@
                 "description" : "Provided assistance in a study of suicide attempts in the military",
                 "tabText" : ["Reserach Assistant"],
                 "imageUrl" : "",
-                "links" : [ 
+                "links" : [
                     {
                         "name" : "More Info",
                         "url" : "https://nocklab.fas.harvard.edu"
@@ -158,7 +157,7 @@
 
                 "tabText" : ["Research Assistant"],
                 "links" : [
-                    { 
+                    {
                       "name": "More Info",
                       "url" : "https://www.mcnallylab.com/"
                     }
